@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fc700df00ba6acc34d56938c114cfd, type: 3}
+  m_Name: ScoreboardFontSettings
+  m_EditorClassIdentifier:
+  fontSize: 28
+  fontSizeIncrementAmount: 1
+  maxFontSize: 28
+  minFontSize: 10
+  fontSelectionList:
+  - {fileID: 11400000, guid: bcb06b9143befde4eab4dfe99c63de38, type: 2}
+  - {fileID: 11400000, guid: 478a4929dbf82b6448c9056688275940, type: 2}
+  - {fileID: 11400000, guid: 62beb6a173508b54ab7ef0b34f802e22, type: 2}
+  - {fileID: 11400000, guid: b6949802deb2d09439b29c1b0682f377, type: 2}
+  - {fileID: 11400000, guid: c3662769fec00294b808c7d51013dd2a, type: 2}
+  - {fileID: 11400000, guid: 93304065573d4f24ba6621b2b4a80db2, type: 2}
+  - {fileID: 11400000, guid: 18bebf74c8170d34fae814850ea53f3c, type: 2}
+  - {fileID: 11400000, guid: 944514088590fae47a68ddb5bdf8643f, type: 2}
+  scoreboardSizeAndPositionState: {fileID: 11400000, guid: dd70be44670b6984f8e1f71dde1321c2, type: 2}

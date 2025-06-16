@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bd2acf2f296bf0cec0a5e4f663c4d7, type: 3}
+  m_Name: GetGameBoardCoordinatesFromRealWorldStrategy
+  m_EditorClassIdentifier:
+  gameBoardCoordinates: {fileID: 11400000, guid: 4b472cfdd5f0b3547ab77900b7447526, type: 2}
+  getDownwardOffset: {fileID: 11400000, guid: bc69f26bf3b0f6e48a649ba4c7053659, type: 2}
+  getPoint: {fileID: 11400000, guid: 17a277cd99e8ced469f6507233cb83f2, type: 2}
+  isInBounds: {fileID: 11400000, guid: 2f3c6bfacfb587e4587c7a8d4f26ecd6, type: 2}

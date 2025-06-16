@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a894278afd2bc1e0d3b2f80081e350, type: 3}
+  m_Name: Tic-Tac-Toe
+  m_EditorClassIdentifier:
+  detectionEnabled: 0
+  gameId: 4
+  gameName: Tic-Tac-Toe
+  gameIcon: {fileID: 21300000, guid: 676ccc8482613fd44a8cb0a6284dbf5e, type: 2}
+  gamePrefab: {fileID: 1964613661552629, guid: 5ab065850b3f175459414876ee177fc2, type: 2}
+  weeklyFreeTrial: 0
+  subGameSelectionPrefab: {fileID: 0}

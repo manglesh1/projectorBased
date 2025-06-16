@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a894278afd2bc1e0d3b2f80081e350, type: 3}
+  m_Name: Big Axe Hunter
+  m_EditorClassIdentifier:
+  detectionEnabled: 0
+  gameId: 17
+  gameName: Big Axe Hunter
+  gameIcon: {fileID: 21300000, guid: bcf22af765091a04d943f7f57e0e8280, type: 2}
+  gamePrefab: {fileID: 1115592145076647, guid: 890d024f5874daf46895022f80fa7c0a, type: 2}
+  weeklyFreeTrial: 0
+  subGameSelectionPrefab: {fileID: 0}

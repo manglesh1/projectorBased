@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -59790262, guid: e37629511771f6fe90a395268a6422f4, type: 3}
+  m_Name: PollingProcessingProfile
+  m_EditorClassIdentifier:
+  _processingBlocks:
+  - {fileID: 11400000, guid: aae5c9190041cbc4d82a575f0c29557d, type: 2}
+  - {fileID: 11400000, guid: ab6321167be6f7e4bb443affffd8e6cd, type: 2}
+  - {fileID: 11400000, guid: bee3dec43ebb2574f905af3c91d3d633, type: 2}
+  - {fileID: 11400000, guid: a33acd7b6abb0a749b3543bc98a39d8e, type: 2}
+  - {fileID: 11400000, guid: 20546b1bf32c9234eb3d7aa2af25a7ad, type: 2}
+  - {fileID: 11400000, guid: 5d012413647bb3947bf8e91c4e46bdc0, type: 2}

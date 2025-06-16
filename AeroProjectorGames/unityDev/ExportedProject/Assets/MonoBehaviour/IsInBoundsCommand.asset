@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63d448d0719276ac893190e54096aafc, type: 3}
+  m_Name: IsInBoundsCommand
+  m_EditorClassIdentifier:
+  gameBoardCoordinates: {fileID: 11400000, guid: 4b472cfdd5f0b3547ab77900b7447526, type: 2}
+  getDownwardScale: {fileID: 11400000, guid: 9486a61caea81e8458bb4373521dab46, type: 2}

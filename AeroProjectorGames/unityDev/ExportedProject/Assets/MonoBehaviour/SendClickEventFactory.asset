@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9963bc78179996e877a2503535e16c27, type: 3}
+  m_Name: SendClickEventFactory
+  m_EditorClassIdentifier:
+  gameState: {fileID: 11400000, guid: 5c4074dc39678304492138a6a7af6271, type: 2}
+  buttonStrategy: {fileID: 11400000, guid: 2e5b4c5d441df394aaeb0d632c424b39, type: 2}
+  colliderStrategy: {fileID: 11400000, guid: 83084c9339f70ef4bb9fa6278b67cfd9, type: 2}
+  eventTriggerStrategy: {fileID: 11400000, guid: 0658ad9eb2809f442b097ae78ad77f21, type: 2}
+  spriteStrategy: {fileID: 11400000, guid: 98dae1b8763e66447abe064910ec8d03, type: 2}
+  onPointerClickUpwardsStrategy: {fileID: 11400000, guid: 6869eff706410834985d504193cf48bc, type: 2}

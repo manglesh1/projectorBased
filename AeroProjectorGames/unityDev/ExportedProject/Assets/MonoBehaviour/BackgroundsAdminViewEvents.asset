@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b099fadfd1cafc3c500234ba9150426, type: 3}
+  m_Name: BackgroundsAdminViewEvents
+  m_EditorClassIdentifier:
+  viewState: {fileID: 11400000, guid: e731311eebbcc8545b5844463039f60a, type: 2}
+  securityEvents: {fileID: 11400000, guid: 6f9242ff5aa7664489a6760be6a8ccbd, type: 2}

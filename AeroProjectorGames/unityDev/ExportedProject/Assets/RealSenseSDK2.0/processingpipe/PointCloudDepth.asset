@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -59790262, guid: e37629511771f6fe90a395268a6422f4, type: 3}
+  m_Name: PointCloudDepth
+  m_EditorClassIdentifier:
+  _processingBlocks:
+  - {fileID: 11400000, guid: 3fa279b6a77dcb74db375c607c2c3e7c, type: 2}
+  - {fileID: 11400000, guid: 03e96ac7728c1224bbbb009002d443de, type: 2}
