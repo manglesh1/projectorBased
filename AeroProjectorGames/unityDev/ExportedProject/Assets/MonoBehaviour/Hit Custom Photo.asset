@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 0
   gameId: 14
   gameName: Axe Photos
-  gameIcon: {fileID: 21300000, guid: a203f45856bcd02429079ded3b689002, type: 2}
-  gamePrefab: {fileID: 1508202508530091, guid: a5fcaed76c8229d4682a137563e190ad, type: 2}
+  gameIcon: {fileID: 21300000, guid: 26b1619e9217eed4199862a2e663c319, type: 2}
+  gamePrefab: {fileID: 1281163377751597, guid: b637471840508bb478190023b2e314f1, type: 2}
   weeklyFreeTrial: 0
   subGameSelectionPrefab: {fileID: 0}

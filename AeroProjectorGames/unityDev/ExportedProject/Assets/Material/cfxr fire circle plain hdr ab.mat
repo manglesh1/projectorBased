@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: cfxr fire circle plain hdr ab
-  m_Shader: {fileID: 4800000, guid: eec93675393708d47bc42955a1b48f05, type: 3}
+  m_Shader: {fileID: 4800000, guid: 867db00afe85cab488023cfea075917b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -38,7 +38,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _DistortTex:
-        m_Texture: {fileID: 2800000, guid: 3f8b060ec46630f499b23480a60fbaa8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 63cd8fdc724a67643b850d43f1e98285, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _DitherCustom:
@@ -46,7 +46,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _MainTex:
-        m_Texture: {fileID: 2800000, guid: 45cbbec85d281524d8ee90bdd54cfcbc, type: 3}
+        m_Texture: {fileID: 2800000, guid: b324f685438330b47bd071e81df6dec0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _OverlayTex:

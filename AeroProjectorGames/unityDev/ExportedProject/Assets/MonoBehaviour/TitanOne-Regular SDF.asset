@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -667331979, guid: 67dfb1fdfb2b407222eda8e23ac8b724, type: 3}
+  m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: TitanOne-Regular SDF
   m_EditorClassIdentifier:
   hashCode: 416918980
-  material: {fileID: 2100000, guid: dbb052a1899ad0041aeef79bdb8dff36, type: 2}
+  material: {fileID: 2100000, guid: bc67b3aae8a197341869b64cb92549ba, type: 2}
   materialHashCode: 2009710180
   m_Version: 1.1.0
   m_SourceFontFileGUID: e9b7b44f17cce39409ef75cf9004c639
@@ -1868,7 +1868,7 @@ MonoBehaviour:
     m_GlyphIndex: 324
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: 2800000, guid: f23a022acec444c47966264ac5a93af1, type: 3}
+  - {fileID: 2800000, guid: af79fae41c7276841a689f1b7429c42a, type: 3}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 0

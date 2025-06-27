@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f768eb0e036d930544f5a417d06e0c4, type: 3}
   m_Name: GetAdjustedRealWorldCoordinatesCommand
   m_EditorClassIdentifier:
-  getScaledOffset: {fileID: 11400000, guid: 9486a61caea81e8458bb4373521dab46, type: 2}
+  getScaledOffset: {fileID: 11400000, guid: 044f2bf949ab2724096c68177c96fc07, type: 2}

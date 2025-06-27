@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: f1bf01787af8f8e4cb7809fd5b279436
+  productGUID: 560eff7d0106c8948afefe46a301e2e7
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -40,7 +40,7 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 21300000, guid: 666900903b4b17f4eacafd87ca5efbce, type: 2}
+  - logo: {fileID: 21300000, guid: dac8b6eff4a11a74d9b70075daf7af22, type: 2}
     duration: 3
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -139,7 +139,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   bundleVersion: 1.0
   preloadedAssets:
-  - {fileID: 11400000, guid: 3bcb4482c158dd1448f69ae2da3af05e, type: 2}
+  - {fileID: 11400000, guid: f69cf8cdcd43f4548bb9c0c360a369ec, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

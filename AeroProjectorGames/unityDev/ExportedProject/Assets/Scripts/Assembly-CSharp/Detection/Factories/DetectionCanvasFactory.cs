@@ -17,15 +17,12 @@ namespace Detection.Factories
 
 		public GameObject[] GetDetectionCanvas()
 		{
-			switch (SettingsStore.DetectionSettings.DetectedCamera)
+			return SettingsStore.DetectionSettings.DetectedCamera switch
 			{
-			case DetectedCameraEnum.OakD:
-				return oakDDetectionCanvas;
-			default:
-				return blankGameObject;
-			case DetectedCameraEnum.RealSense:
-				return realSenseDetectionCanvas;
-			}
+				DetectedCameraEnum.OakD => oakDDetectionCanvas, 
+				DetectedCameraEnum.RealSense => realSenseDetectionCanvas, 
+				_ => blankGameObject, 
+			};
 		}
 	}
 }

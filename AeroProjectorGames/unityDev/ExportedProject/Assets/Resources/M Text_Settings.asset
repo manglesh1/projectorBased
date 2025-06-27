@@ -16,10 +16,10 @@ MonoBehaviour:
   tabSelectedColor: {r: 1, g: 1, b: 1, a: 1}
   tabUnselectedColor: {r: 0.9019608, g: 0.9019608, b: 0.9019608, a: 1}
   gridItemColor: {r: 0.8301887, g: 0.81060874, b: 0.81060874, a: 1}
-  defaultFont: {fileID: 11400000, guid: 12a5c368afc86ce498fcc408efaca8df, type: 2}
+  defaultFont: {fileID: 11400000, guid: 2edf873e7ad1e104c983720bb096fed9, type: 2}
   defaultTextSize: {x: 8, y: 8, z: 2}
-  defaultTextMaterial: {fileID: 2100000, guid: 18cee798c26d0b84c87f147c91d826f5, type: 2}
-  defaultBackgroundMaterial: {fileID: 2100000, guid: e90c788e908f5784fbd20acbd1dc547b, type: 2}
+  defaultTextMaterial: {fileID: 2100000, guid: 1aca8946a59c48c4a9056be52432add0, type: 2}
+  defaultBackgroundMaterial: {fileID: 2100000, guid: e09e3b09fbb4ced43a2e0a41da9a42e9, type: 2}
   autoCreateInEditorMode: 1
   autoCreateInPlayMode: 1
   vertexDensity: 1

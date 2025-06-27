@@ -37,19 +37,15 @@ namespace MHLab.Patch.Core.Client.IO
 		{
 			try
 			{
-				using (HttpClientHandler handler = new HttpClientHandler
+				using HttpClientHandler handler = new HttpClientHandler
 				{
 					Credentials = Credentials,
 					Proxy = Proxy
-				})
-				{
-					using (HttpClient httpClient = new HttpClient(handler))
-					{
-						HttpResponseMessage result = httpClient.GetAsync(url).Result;
-						exception = null;
-						return result.StatusCode == HttpStatusCode.OK;
-					}
-				}
+				};
+				using HttpClient httpClient = new HttpClient(handler);
+				HttpResponseMessage result = httpClient.GetAsync(url).Result;
+				exception = null;
+				return result.StatusCode == HttpStatusCode.OK;
 			}
 			catch (Exception ex)
 			{

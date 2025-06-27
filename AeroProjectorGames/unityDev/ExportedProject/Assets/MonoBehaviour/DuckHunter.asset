@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 1
   gameId: 3
   gameName: Duck Hunter
-  gameIcon: {fileID: 21300000, guid: 042d7f0c2aab03344a7860379a8cf1cd, type: 2}
-  gamePrefab: {fileID: 1609530365352801, guid: ba02eb12c737a4f42aae0713493bd7af, type: 2}
+  gameIcon: {fileID: 21300000, guid: a92e47c5ecdc3524bb98bdcee9ae25ec, type: 2}
+  gamePrefab: {fileID: 1263878735259701, guid: 04854061cc3eeaa4cbeb900403337fd2, type: 2}
   weeklyFreeTrial: 0
-  subGameSelectionPrefab: {fileID: 1697441744792890, guid: c588edf0a4c22a144b302d94a4b457d4, type: 2}
+  subGameSelectionPrefab: {fileID: 1262932268920886, guid: e481eafe9345e4f458375083e5749633, type: 2}

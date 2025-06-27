@@ -10,16 +10,10 @@ namespace MHLab.Patch.Core.Octodiff
 			{
 				SkipHashCheck = true
 			};
-			using (FileStream basisFileStream = new FileStream(fileBackupPath, FileMode.Open, FileAccess.Read, FileShare.Read))
-			{
-				using (FileStream stream = new FileStream(patchPath, FileMode.Open, FileAccess.Read, FileShare.Read))
-				{
-					using (FileStream outputStream = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite, FileShare.Read))
-					{
-						deltaApplier.Apply(basisFileStream, new BinaryDeltaReader(stream, null), outputStream);
-					}
-				}
-			}
+			using FileStream basisFileStream = new FileStream(fileBackupPath, FileMode.Open, FileAccess.Read, FileShare.Read);
+			using FileStream stream = new FileStream(patchPath, FileMode.Open, FileAccess.Read, FileShare.Read);
+			using FileStream outputStream = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite, FileShare.Read);
+			deltaApplier.Apply(basisFileStream, new BinaryDeltaReader(stream, null), outputStream);
 		}
 	}
 }

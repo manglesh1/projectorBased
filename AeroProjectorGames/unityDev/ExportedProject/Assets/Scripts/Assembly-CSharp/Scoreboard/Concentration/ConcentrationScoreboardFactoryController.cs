@@ -28,23 +28,16 @@ namespace Scoreboard.Concentration
 
 		public GameObject GetScoreboard(PlayerStateSO playerState)
 		{
-			switch (playerState.players.Count)
+			return playerState.players.Count switch
 			{
-			case 1:
-				return concentrationScoreboard1Player;
-			case 2:
-				return concentrationScoreboard2Player;
-			case 3:
-				return concentrationScoreboard3Player;
-			case 4:
-				return concentrationScoreboard4Player;
-			case 5:
-				return concentrationScoreboard5Player;
-			case 6:
-				return concentrationScoreboard6Player;
-			default:
-				throw new ArgumentOutOfRangeException();
-			}
+				1 => concentrationScoreboard1Player, 
+				2 => concentrationScoreboard2Player, 
+				3 => concentrationScoreboard3Player, 
+				4 => concentrationScoreboard4Player, 
+				5 => concentrationScoreboard5Player, 
+				6 => concentrationScoreboard6Player, 
+				_ => throw new ArgumentOutOfRangeException(), 
+			};
 		}
 	}
 }

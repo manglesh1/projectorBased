@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -667331979, guid: 67dfb1fdfb2b407222eda8e23ac8b724, type: 3}
+  m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: FredokaOne-Regular SDF
   m_EditorClassIdentifier:
   hashCode: -1279090830
-  material: {fileID: 2100000, guid: a3d3df0480f9c8649bddd964528b7dc5, type: 2}
+  material: {fileID: 2100000, guid: 79ff9820ec46e214ea395381f93509ab, type: 2}
   materialHashCode: -792279406
   m_Version: 1.1.0
   m_SourceFontFileGUID: 134eefb21abc0f6498c8a240076da9b6
@@ -1868,7 +1868,7 @@ MonoBehaviour:
     m_GlyphIndex: 219
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: 2800000, guid: 7d8699d1c5b87c5419095a97af942515, type: 3}
+  - {fileID: 2800000, guid: fa86c30f93b89f14eb5ab3a1d770c605, type: 3}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 0

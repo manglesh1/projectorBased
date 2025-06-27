@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: -1472958050, guid: a7c8ed169960a6d09f38393641221f85, type: 3}
   m_Name: UI/RightClick
   m_EditorClassIdentifier:
-  m_Asset: {fileID: 11400000, guid: aaffd54d71da06f43808e69090d1b2ff, type: 2}
+  m_Asset: {fileID: 11400000, guid: 7d10211a8a2557d4e871072c9b106834, type: 2}
   m_ActionId: 44b200b1-1557-4083-816c-b22cbdf77ddf

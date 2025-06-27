@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LightningBoltMaterialMesh
-  m_Shader: {fileID: 4800000, guid: dc7b01d727704bf4c8f0522b9f85afc9, type: 3}
+  m_Shader: {fileID: 4800000, guid: 6b1efd7074767e44b8b41227521cc5e2, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -26,7 +26,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
       _MainTex:
-        m_Texture: {fileID: 2800000, guid: ef3e1f6140827974d8b5e22583fce51d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8e30cec06b569424b956660db5e20aaf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: {}

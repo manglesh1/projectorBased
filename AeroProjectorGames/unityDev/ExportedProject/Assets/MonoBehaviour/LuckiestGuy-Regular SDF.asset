@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -667331979, guid: 67dfb1fdfb2b407222eda8e23ac8b724, type: 3}
+  m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: LuckiestGuy-Regular SDF
   m_EditorClassIdentifier:
   hashCode: -1536617929
-  material: {fileID: 2100000, guid: 0f957b42ee487b84a9a98440e21bc8ae, type: 2}
+  material: {fileID: 2100000, guid: 5ede138b48b8db94bac261c123a54096, type: 2}
   materialHashCode: 684492983
   m_Version: 1.1.0
   m_SourceFontFileGUID: 964b31e427e6a9e41bbe05cde199c946
@@ -1887,7 +1887,7 @@ MonoBehaviour:
     m_GlyphIndex: 129
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: 2800000, guid: 01652eca0ffec6d4e8455db97f291059, type: 3}
+  - {fileID: 2800000, guid: 20d00b1fbd06f794ca526414fd92ce61, type: 3}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 0

@@ -28,23 +28,16 @@ namespace Scoreboard.CricketScoreboards
 
 		public GameObject GetScoreboard(PlayerStateSO playerState)
 		{
-			switch (playerState.players.Count)
+			return playerState.players.Count switch
 			{
-			case 1:
-				return unscoredCricketScoreboardTemplate1Player;
-			case 2:
-				return unscoredCricketScoreboardTemplate2Player;
-			case 3:
-				return unscoredCricketScoreboardTemplate3Player;
-			case 4:
-				return unscoredCricketScoreboardTemplate4Player;
-			case 5:
-				return unscoredCricketScoreboardTemplate5Player;
-			case 6:
-				return unscoredCricketScoreboardTemplate6Player;
-			default:
-				throw new ArgumentOutOfRangeException();
-			}
+				1 => unscoredCricketScoreboardTemplate1Player, 
+				2 => unscoredCricketScoreboardTemplate2Player, 
+				3 => unscoredCricketScoreboardTemplate3Player, 
+				4 => unscoredCricketScoreboardTemplate4Player, 
+				5 => unscoredCricketScoreboardTemplate5Player, 
+				6 => unscoredCricketScoreboardTemplate6Player, 
+				_ => throw new ArgumentOutOfRangeException(), 
+			};
 		}
 	}
 }

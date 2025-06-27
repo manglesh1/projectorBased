@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 0
   gameId: 18
   gameName: Norse
-  gameIcon: {fileID: 21300000, guid: 9dca20bd48e7c644ea0221622eeaf470, type: 2}
-  gamePrefab: {fileID: 1461028098882905, guid: 828b9d911a9edd54d88ba153b2a088c7, type: 2}
+  gameIcon: {fileID: 21300000, guid: e526f9bbc1e7c914a9e5d41dee431ad0, type: 2}
+  gamePrefab: {fileID: 1018839293901090, guid: d321537a19c62ba499886f88c201b4e8, type: 2}
   weeklyFreeTrial: 0
   subGameSelectionPrefab: {fileID: 0}

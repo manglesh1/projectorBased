@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 0
   gameId: 1
   gameName: Standard Target
-  gameIcon: {fileID: 21300000, guid: 46f57c5603422594ba5e6f93d76c8e9b, type: 2}
-  gamePrefab: {fileID: 1001759345025721, guid: d4186d80a4fd8484d995bc079b0d9a52, type: 2}
+  gameIcon: {fileID: 21300000, guid: 38f4bc57b53e0a0449c2d72a5bd52012, type: 2}
+  gamePrefab: {fileID: 1427681873830084, guid: 0dc41ab2775e0a34a8a0aa26dc5fb50d, type: 2}
   weeklyFreeTrial: 0
   subGameSelectionPrefab: {fileID: 0}

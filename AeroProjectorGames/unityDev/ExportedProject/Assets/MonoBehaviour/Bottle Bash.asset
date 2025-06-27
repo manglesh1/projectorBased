@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 0
   gameId: 12
   gameName: Bottle Axe
-  gameIcon: {fileID: 21300000, guid: b8b4098ae7d15314187737a9a32368ef, type: 2}
-  gamePrefab: {fileID: 1131869256178218, guid: edddc7cfd858bd34c91f010ea314875a, type: 2}
+  gameIcon: {fileID: 21300000, guid: 5f66eb820576066468784ed55b55c462, type: 2}
+  gamePrefab: {fileID: 1346964206356857, guid: f363e74c046fac64ab65f4cbc6ff382a, type: 2}
   weeklyFreeTrial: 0
   subGameSelectionPrefab: {fileID: 0}

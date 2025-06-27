@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a44b8887922f828aa0d0a1877846700, type: 3}
   m_Name: GetTransformedPointCommand
   m_EditorClassIdentifier:
-  boundaryCoordinates: {fileID: 11400000, guid: 4b472cfdd5f0b3547ab77900b7447526, type: 2}
+  boundaryCoordinates: {fileID: 11400000, guid: a0036c7c0647b894fa0aa94cf4db1e4c, type: 2}

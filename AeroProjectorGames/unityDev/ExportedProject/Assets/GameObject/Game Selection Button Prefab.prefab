@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1102530128620769
+--- !u!1 &1447101982567569
 GameObject:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Component:
-  - component: {fileID: 224296010217026396}
-  - component: {fileID: 222899834326544505}
-  - component: {fileID: 114147911721778066}
-  - component: {fileID: 114590384918001204}
+  - component: {fileID: 224748980830149668}
+  - component: {fileID: 222898736991496247}
+  - component: {fileID: 114849523580913435}
+  - component: {fileID: 114646795983848674}
   m_Layer: 5
   m_Name: Game Selection Button Prefab
   m_TagString: Untagged
@@ -19,7 +19,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1479346713634707
+--- !u!1 &1798908670139131
 GameObject:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -27,9 +27,9 @@ GameObject:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Component:
-  - component: {fileID: 224833610480149203}
-  - component: {fileID: 222983642578585108}
-  - component: {fileID: 114386782728546384}
+  - component: {fileID: 224825876826560450}
+  - component: {fileID: 222335530667007606}
+  - component: {fileID: 114936245644232864}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -37,20 +37,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &224296010217026396
+--- !u!224 &224748980830149668
 RectTransform:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102530128620769}
+  m_GameObject: {fileID: 1447101982567569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 224833610480149203}
+  - {fileID: 224825876826560450}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_AnchorMin: {x: 0, y: 1}
@@ -58,24 +58,24 @@ RectTransform:
   m_AnchoredPosition: {x: 304.134, y: -64}
   m_SizeDelta: {x: 209, y: 153}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &222899834326544505
+--- !u!222 &222898736991496247
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102530128620769}
+  m_GameObject: {fileID: 1447101982567569}
   m_CullTransparentMesh: 1
---- !u!114 &114147911721778066
+--- !u!114 &114849523580913435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102530128620769}
+  m_GameObject: {fileID: 1447101982567569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: d3e719b59ab71ba3f6b398058c866280, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name:
   m_EditorClassIdentifier:
   m_Material: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 552eb153714f0bc41ad098d8b4428ce3, type: 2}
+  m_Sprite: {fileID: 21300000, guid: 4bc00ce6b67a5a641aec078a8d446fd4, type: 2}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -96,16 +96,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &114590384918001204
+--- !u!114 &114646795983848674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102530128620769}
+  m_GameObject: {fileID: 1447101982567569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: d3e719b59ab71ba3f6b398058c866280, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name:
   m_EditorClassIdentifier:
   m_Navigation:
@@ -136,48 +136,48 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 114147911721778066}
+  m_TargetGraphic: {fileID: 114849523580913435}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!224 &224833610480149203
+--- !u!224 &224825876826560450
 RectTransform:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1479346713634707}
+  m_GameObject: {fileID: 1798908670139131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 224296010217026396}
+  m_Father: {fileID: 224748980830149668}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0.25, y: 0}
   m_SizeDelta: {x: 209.5, y: 35.9462}
   m_Pivot: {x: 0.5, y: 0}
---- !u!222 &222983642578585108
+--- !u!222 &222335530667007606
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1479346713634707}
+  m_GameObject: {fileID: 1798908670139131}
   m_CullTransparentMesh: 1
---- !u!114 &114386782728546384
+--- !u!114 &114936245644232864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1479346713634707}
+  m_GameObject: {fileID: 1798908670139131}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1453722849, guid: 67dfb1fdfb2b407222eda8e23ac8b724, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name:
   m_EditorClassIdentifier:
   m_Material: {fileID: 0}
@@ -190,8 +190,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Setup Teams
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bcb06b9143befde4eab4dfe99c63de38, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 7bc3533719657314d83b821954cec064, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 89cbf93345fa2b6429ed4c69fc91aaca, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 46907d601be8a03408e31372a6441c7e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

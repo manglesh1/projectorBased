@@ -217,21 +217,15 @@ namespace Games.Ducks.Scripts
 		private GameObject GetGridPosition(int rowNumber, int colNumber)
 		{
 			colNumber--;
-			switch (rowNumber)
+			return rowNumber switch
 			{
-			case 1:
-				return boardLayoutRow1[colNumber];
-			case 2:
-				return boardLayoutRow2[colNumber];
-			case 3:
-				return boardLayoutRow3[colNumber];
-			case 4:
-				return boardLayoutRow4[colNumber];
-			case 5:
-				return boardLayoutRow5[colNumber];
-			default:
-				return new GameObject();
-			}
+				1 => boardLayoutRow1[colNumber], 
+				2 => boardLayoutRow2[colNumber], 
+				3 => boardLayoutRow3[colNumber], 
+				4 => boardLayoutRow4[colNumber], 
+				5 => boardLayoutRow5[colNumber], 
+				_ => new GameObject(), 
+			};
 		}
 
 		private void GameTypeSettings()

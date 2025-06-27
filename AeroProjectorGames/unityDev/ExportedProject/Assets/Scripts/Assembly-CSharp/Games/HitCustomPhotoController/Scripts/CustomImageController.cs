@@ -217,11 +217,9 @@ namespace Games.HitCustomPhotoController.Scripts
 					break;
 				}
 			}
-			using (HMACSHA256 hMACSHA = new HMACSHA256(Encoding.UTF8.GetBytes("OztDJ1hOy3yCAml2")))
-			{
-				byte[] bytes = Encoding.UTF8.GetBytes(urlToCheck);
-				return Convert.ToBase64String(hMACSHA.ComputeHash(bytes)) == dataResponseId && flag;
-			}
+			using HMACSHA256 hMACSHA = new HMACSHA256(Encoding.UTF8.GetBytes("OztDJ1hOy3yCAml2"));
+			byte[] bytes = Encoding.UTF8.GetBytes(urlToCheck);
+			return Convert.ToBase64String(hMACSHA.ComputeHash(bytes)) == dataResponseId && flag;
 		}
 
 		private void CreateGameSession()

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water_mat_03
-  m_Shader: {fileID: 4800000, guid: 25d34da8dbdf5224795978c109ce113a, type: 3}
+  m_Shader: {fileID: 4800000, guid: 40db44ef317e2a540857c1a6617465f3, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -24,11 +24,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
       _Ripples:
-        m_Texture: {fileID: 2800000, guid: c917dd378cf2d69479ca2109d1a9ae3b, type: 3}
+        m_Texture: {fileID: 2800000, guid: a377f82ac6961d04b8ed2a5fb21abbfd, type: 3}
         m_Scale: {x: 1.5, y: 1.5}
         m_Offset: {x: 0, y: 0}
       _Ripples2:
-        m_Texture: {fileID: 2800000, guid: 91775fbff3504e847908b660e9386f20, type: 3}
+        m_Texture: {fileID: 2800000, guid: 619551e57d6c5b24e84e19ad28944b76, type: 3}
         m_Scale: {x: 1.5, y: 1.5}
         m_Offset: {x: 0, y: 0}
       _Ripples_Displacement:

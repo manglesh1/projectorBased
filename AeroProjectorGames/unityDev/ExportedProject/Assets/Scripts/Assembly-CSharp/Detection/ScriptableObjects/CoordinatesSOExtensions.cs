@@ -8,25 +8,14 @@ namespace Detection.ScriptableObjects
 	{
 		public static Vector2Int GetGameBoardLocation(this CoordinatesSO model, Vector2 gameboardSize, Vector2Int realWorldLocation, bool allowOutOfBounds = false)
 		{
-			Vector2Int result;
-			switch (GameBoardQuadrantEnumExtensions.GetFromRealWorldCoordinates(model.GetMidPoint(), realWorldLocation))
+			return GameBoardQuadrantEnumExtensions.GetFromRealWorldCoordinates(model.GetMidPoint(), realWorldLocation) switch
 			{
-			case GameBoardQuadrantEnum.TopLeft:
-				result = new Vector2Int((int)(model.GetTopWidthPercent(realWorldLocation.x, allowOutOfBounds) * (decimal)gameboardSize.x), (int)(model.GetLeftHeightPercent(realWorldLocation.y, allowOutOfBounds) * (decimal)gameboardSize.y));
-				break;
-			case GameBoardQuadrantEnum.TopRight:
-				result = new Vector2Int((int)(model.GetTopWidthPercent(realWorldLocation.x, allowOutOfBounds) * (decimal)gameboardSize.x), (int)(model.GetRightHeightPercent(realWorldLocation.y, allowOutOfBounds) * (decimal)gameboardSize.y));
-				break;
-			case GameBoardQuadrantEnum.BottomRight:
-				result = new Vector2Int((int)(model.GetBottomWidthPercent(realWorldLocation.x, allowOutOfBounds) * (decimal)gameboardSize.x), (int)(model.GetRightHeightPercent(realWorldLocation.y, allowOutOfBounds) * (decimal)gameboardSize.y));
-				break;
-			case GameBoardQuadrantEnum.BottomLeft:
-				result = new Vector2Int((int)(model.GetBottomWidthPercent(realWorldLocation.x, allowOutOfBounds) * (decimal)gameboardSize.x), (int)(model.GetLeftHeightPercent(realWorldLocation.y, allowOutOfBounds) * (decimal)gameboardSize.y));
-				break;
-			default:
-				throw new InvalidOperationException("Unknown quadrant");
-			}
-			return result;
+				GameBoardQuadrantEnum.TopLeft => new Vector2Int((int)(model.GetTopWidthPercent(realWorldLocation.x, allowOutOfBounds) * (decimal)gameboardSize.x), (int)(model.GetLeftHeightPercent(realWorldLocation.y, allowOutOfBounds) * (decimal)gameboardSize.y)), 
+				GameBoardQuadrantEnum.TopRight => new Vector2Int((int)(model.GetTopWidthPercent(realWorldLocation.x, allowOutOfBounds) * (decimal)gameboardSize.x), (int)(model.GetRightHeightPercent(realWorldLocation.y, allowOutOfBounds) * (decimal)gameboardSize.y)), 
+				GameBoardQuadrantEnum.BottomRight => new Vector2Int((int)(model.GetBottomWidthPercent(realWorldLocation.x, allowOutOfBounds) * (decimal)gameboardSize.x), (int)(model.GetRightHeightPercent(realWorldLocation.y, allowOutOfBounds) * (decimal)gameboardSize.y)), 
+				GameBoardQuadrantEnum.BottomLeft => new Vector2Int((int)(model.GetBottomWidthPercent(realWorldLocation.x, allowOutOfBounds) * (decimal)gameboardSize.x), (int)(model.GetLeftHeightPercent(realWorldLocation.y, allowOutOfBounds) * (decimal)gameboardSize.y)), 
+				_ => throw new InvalidOperationException("Unknown quadrant"), 
+			};
 		}
 
 		public static int GetRatioBottomBoundary(this CoordinatesSO model, int x)

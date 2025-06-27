@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b099fadfd1cafc3c500234ba9150426, type: 3}
   m_Name: BackgroundsAdminViewEvents
   m_EditorClassIdentifier:
-  viewState: {fileID: 11400000, guid: e731311eebbcc8545b5844463039f60a, type: 2}
-  securityEvents: {fileID: 11400000, guid: 6f9242ff5aa7664489a6760be6a8ccbd, type: 2}
+  viewState: {fileID: 11400000, guid: 5a1bb5be79c87f142b4f39fac6c7894c, type: 2}
+  securityEvents: {fileID: 11400000, guid: 0e630fc79826c144cb8724e1d5d8c458, type: 2}

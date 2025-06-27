@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c7e65a3083f04343956dcbe79d3d363, type: 3}
   m_Name: AuthenticationState
   m_EditorClassIdentifier:
-  gameEvents: {fileID: 11400000, guid: 0807df6b3715eb24d8263b9de8bbd2a5, type: 2}
+  gameEvents: {fileID: 11400000, guid: 4bb8b4bdfc88200468d61a80bffadb7b, type: 2}

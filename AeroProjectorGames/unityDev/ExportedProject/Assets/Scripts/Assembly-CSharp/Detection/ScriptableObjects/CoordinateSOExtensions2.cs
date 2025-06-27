@@ -80,36 +80,26 @@ namespace Detection.ScriptableObjects
 
 		private static decimal GetPercentOfHeight(this CoordinatesSO model, GameBoardQuadrantEnum quadrant, Vector2Int realWorldLocation)
 		{
-			switch (quadrant)
+			return quadrant switch
 			{
-			case GameBoardQuadrantEnum.TopLeft:
-				return (realWorldLocation.y - model.TopLeft.y) / model.GetHeightOfLeft();
-			case GameBoardQuadrantEnum.TopRight:
-				return (realWorldLocation.y - model.TopRight.y) / model.GetHeightOfRight();
-			case GameBoardQuadrantEnum.BottomRight:
-				return (realWorldLocation.y - model.TopRight.y) / model.GetHeightOfRight();
-			case GameBoardQuadrantEnum.BottomLeft:
-				return (realWorldLocation.y - model.TopLeft.y) / model.GetHeightOfLeft();
-			default:
-				throw new InvalidOperationException("Unknown quadrant");
-			}
+				GameBoardQuadrantEnum.TopLeft => (realWorldLocation.y - model.TopLeft.y) / model.GetHeightOfLeft(), 
+				GameBoardQuadrantEnum.TopRight => (realWorldLocation.y - model.TopRight.y) / model.GetHeightOfRight(), 
+				GameBoardQuadrantEnum.BottomRight => (realWorldLocation.y - model.TopRight.y) / model.GetHeightOfRight(), 
+				GameBoardQuadrantEnum.BottomLeft => (realWorldLocation.y - model.TopLeft.y) / model.GetHeightOfLeft(), 
+				_ => throw new InvalidOperationException("Unknown quadrant"), 
+			};
 		}
 
 		private static decimal GetPercentOfWidth(this CoordinatesSO model, GameBoardQuadrantEnum quadrant, Vector2Int realWorldLocation)
 		{
-			switch (quadrant)
+			return quadrant switch
 			{
-			case GameBoardQuadrantEnum.TopLeft:
-				return (realWorldLocation.x - model.TopLeft.x) / model.GetWidthOfTop();
-			case GameBoardQuadrantEnum.TopRight:
-				return (realWorldLocation.x - model.TopLeft.x) / model.GetWidthOfTop();
-			case GameBoardQuadrantEnum.BottomRight:
-				return (realWorldLocation.x - model.BottomLeft.x) / model.GetWidthOfBottom();
-			case GameBoardQuadrantEnum.BottomLeft:
-				return (realWorldLocation.x - model.BottomLeft.x) / model.GetWidthOfBottom();
-			default:
-				throw new InvalidOperationException("Unknown quadrant");
-			}
+				GameBoardQuadrantEnum.TopLeft => (realWorldLocation.x - model.TopLeft.x) / model.GetWidthOfTop(), 
+				GameBoardQuadrantEnum.TopRight => (realWorldLocation.x - model.TopLeft.x) / model.GetWidthOfTop(), 
+				GameBoardQuadrantEnum.BottomRight => (realWorldLocation.x - model.BottomLeft.x) / model.GetWidthOfBottom(), 
+				GameBoardQuadrantEnum.BottomLeft => (realWorldLocation.x - model.BottomLeft.x) / model.GetWidthOfBottom(), 
+				_ => throw new InvalidOperationException("Unknown quadrant"), 
+			};
 		}
 	}
 }

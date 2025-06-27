@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LuckiestGuy-Regular SDF Material
-  m_Shader: {fileID: 4800000, guid: 442ed71f091e1214aa7dc063e46ddd01, type: 3}
+  m_Shader: {fileID: 4800000, guid: f0ec520811799fa45ad01a5dc6121c4e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _MainTex:
-        m_Texture: {fileID: 2800000, guid: 01652eca0ffec6d4e8455db97f291059, type: 3}
+        m_Texture: {fileID: 2800000, guid: 20d00b1fbd06f794ca526414fd92ce61, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _OutlineTex:

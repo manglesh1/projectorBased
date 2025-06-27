@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   customPlayerTextures: []
   gameSessionID:
-  playerState: {fileID: 11400000, guid: 906a8be4982cf4741a9d18b1077aee6c, type: 2}
+  playerState: {fileID: 11400000, guid: 3071b69b5124a1841a9ccc949dc8f002, type: 2}
   teamNames: []

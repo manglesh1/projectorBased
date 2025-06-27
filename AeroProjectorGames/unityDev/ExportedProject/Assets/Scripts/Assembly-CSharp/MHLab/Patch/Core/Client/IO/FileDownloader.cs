@@ -76,12 +76,10 @@ namespace MHLab.Patch.Core.Client.IO
 			FileSystem.CreateDirectory((FilePath)destFolder);
 			if (!FileSystem.FileExists(path))
 			{
-				using (Stream stream = FileSystem.GetFileStream(path, FileMode.OpenOrCreate, FileAccess.Read, FileShare.ReadWrite))
-				{
-					stream.Flush();
-					stream.Dispose();
-					stream.Close();
-				}
+				using Stream stream = FileSystem.GetFileStream(path, FileMode.OpenOrCreate, FileAccess.Read, FileShare.ReadWrite);
+				stream.Flush();
+				stream.Dispose();
+				stream.Close();
 			}
 			byte[] buffer = new byte[32768];
 			bool flag = false;
@@ -172,17 +170,15 @@ namespace MHLab.Patch.Core.Client.IO
 		public virtual string DownloadString(DownloadEntry entry)
 		{
 			ServicePointManager.ServerCertificateValidationCallback = DownloaderHelper.RemoteCertificateValidationCallback;
-			using (WebClient webClient = new WebClient())
+			using WebClient webClient = new WebClient();
+			webClient.Credentials = Credentials;
+			try
 			{
-				webClient.Credentials = Credentials;
-				try
-				{
-					return Encoding.UTF8.GetString(webClient.DownloadData(entry.RemoteUrl));
-				}
-				catch (WebException innerException)
-				{
-					throw new WebException("The URL " + entry.RemoteUrl + " generated an exception.", innerException);
-				}
+				return Encoding.UTF8.GetString(webClient.DownloadData(entry.RemoteUrl));
+			}
+			catch (WebException innerException)
+			{
+				throw new WebException("The URL " + entry.RemoteUrl + " generated an exception.", innerException);
 			}
 		}
 

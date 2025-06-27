@@ -57,12 +57,10 @@ namespace Detection.ProcessingBlocks
 				}
 				num6++;
 			}
-			using (StreamProfile profile = depth.Profile)
-			{
-				DepthFrame depthFrame = frameSource.AllocateVideoFrame<DepthFrame>(profile, depth, depth.BitsPerPixel, depth.Width, depth.Height, depth.Stride, Extension.DepthFrame);
-				depthFrame.CopyFrom(array);
-				return depthFrame;
-			}
+			using StreamProfile profile = depth.Profile;
+			DepthFrame depthFrame = frameSource.AllocateVideoFrame<DepthFrame>(profile, depth, depth.BitsPerPixel, depth.Width, depth.Height, depth.Stride, Extension.DepthFrame);
+			depthFrame.CopyFrom(array);
+			return depthFrame;
 		}
 
 		public override Frame Process(Frame frame, FrameSource frameSource)
@@ -71,31 +69,29 @@ namespace Detection.ProcessingBlocks
 			{
 				using (FrameSet frameSet = FrameSet.FromFrame(frame))
 				{
-					using (DepthFrame depth = frameSet.DepthFrame)
+					using DepthFrame depth = frameSet.DepthFrame;
+					List<Frame> list = new List<Frame>(frameSet.Count);
+					foreach (Frame item in frameSet)
 					{
-						List<Frame> list = new List<Frame>(frameSet.Count);
-						foreach (Frame item in frameSet)
+						using (StreamProfile streamProfile = item.Profile)
 						{
-							using (StreamProfile streamProfile = item.Profile)
+							if (streamProfile.Stream == Stream.Depth && streamProfile.Format == Format.Z16)
 							{
-								if (streamProfile.Stream == Stream.Depth && streamProfile.Format == Format.Z16)
-								{
-									item.Dispose();
-									continue;
-								}
+								item.Dispose();
+								continue;
 							}
-							list.Add(item);
 						}
-						list.Add(ApplyFilter(depth, frameSource));
-						FrameSet frameSet2 = frameSource.AllocateCompositeFrame(list);
-						list.ForEach(delegate(Frame f)
-						{
-							f.Dispose();
-						});
-						using (frameSet2)
-						{
-							return frameSet2.AsFrame();
-						}
+						list.Add(item);
+					}
+					list.Add(ApplyFilter(depth, frameSource));
+					FrameSet frameSet2 = frameSource.AllocateCompositeFrame(list);
+					list.ForEach(delegate(Frame f)
+					{
+						f.Dispose();
+					});
+					using (frameSet2)
+					{
+						return frameSet2.AsFrame();
 					}
 				}
 			}

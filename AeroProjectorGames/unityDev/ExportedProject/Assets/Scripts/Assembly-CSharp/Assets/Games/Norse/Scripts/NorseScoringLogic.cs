@@ -104,21 +104,13 @@ namespace Assets.Games.Norse.Scripts
 				if (num != _previousPowerUp)
 				{
 					norsePowerUpEnum = (NorsePowerUpEnum)num;
-					switch (norsePowerUpEnum)
+					flag = norsePowerUpEnum switch
 					{
-					case NorsePowerUpEnum.ExtraLife:
-						flag = norseState.Players[gameState.CurrentPlayer].NumberOfMisses > 0;
-						break;
-					case NorsePowerUpEnum.Protect:
-						flag = norseState.Players[gameState.CurrentPlayer].NumberOfShields == 0;
-						break;
-					case NorsePowerUpEnum.Reverse:
-						flag = norseState.Players.Count > 2;
-						break;
-					default:
-						flag = true;
-						break;
-					}
+						NorsePowerUpEnum.ExtraLife => norseState.Players[gameState.CurrentPlayer].NumberOfMisses > 0, 
+						NorsePowerUpEnum.Protect => norseState.Players[gameState.CurrentPlayer].NumberOfShields == 0, 
+						NorsePowerUpEnum.Reverse => norseState.Players.Count > 2, 
+						_ => true, 
+					};
 				}
 			}
 			while (!flag);

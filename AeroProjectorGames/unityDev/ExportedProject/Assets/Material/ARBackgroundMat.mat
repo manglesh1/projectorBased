@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: ARBackgroundMat
-  m_Shader: {fileID: 4800000, guid: 45657a86b905694428a3fc92cdb9a22c, type: 3}
+  m_Shader: {fileID: 4800000, guid: f8bcf337abd3e0f4e9e2882c6384300b, type: 3}
   m_ShaderKeywords: _COLORMAP_RAINBOW
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
       _Colormaps:
-        m_Texture: {fileID: 2800000, guid: 7c81f209feb32ea4e94ac2ee95ebafdb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 03313422ad40409489c7f137d106c73d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _DepthTex:

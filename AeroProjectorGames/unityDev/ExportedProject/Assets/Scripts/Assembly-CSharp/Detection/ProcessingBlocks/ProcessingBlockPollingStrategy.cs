@@ -88,23 +88,19 @@ namespace Detection.ProcessingBlocks
 			{
 				if (frame.IsComposite)
 				{
-					using (FrameSet frameSet = FrameSet.FromFrame(frame))
+					using FrameSet frameSet = FrameSet.FromFrame(frame);
+					using DepthFrame frame2 = frameSet.DepthFrame;
+					vectorHandler.RaiseFrameReceived(frame2);
+					Vector3Int[] item = getDistanceVectors.Execute(frame2);
+					_frameSample.Enqueue(item);
+					Vector3Int vectorOfInterest = GetVectorOfInterest();
+					if (vectorOfInterest == Vector3Int.zero)
 					{
-						using (DepthFrame frame2 = frameSet.DepthFrame)
-						{
-							vectorHandler.RaiseFrameReceived(frame2);
-							Vector3Int[] item = getDistanceVectors.Execute(frame2);
-							_frameSample.Enqueue(item);
-							Vector3Int vectorOfInterest = GetVectorOfInterest();
-							if (vectorOfInterest == Vector3Int.zero)
-							{
-								vectorHandler.RaiseObjectRemoved();
-							}
-							else
-							{
-								vectorHandler.RaiseObjectDetected(vectorOfInterest);
-							}
-						}
+						vectorHandler.RaiseObjectRemoved();
+					}
+					else
+					{
+						vectorHandler.RaiseObjectDetected(vectorOfInterest);
 					}
 				}
 			}

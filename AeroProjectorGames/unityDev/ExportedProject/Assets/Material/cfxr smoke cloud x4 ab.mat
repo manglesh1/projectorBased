@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: cfxr smoke cloud x4 ab
-  m_Shader: {fileID: 4800000, guid: eec93675393708d47bc42955a1b48f05, type: 3}
+  m_Shader: {fileID: 4800000, guid: 867db00afe85cab488023cfea075917b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -32,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _DissolveTex:
-        m_Texture: {fileID: 2800000, guid: 3952bde67bec53e4d9e0bd87e896f70c, type: 3}
+        m_Texture: {fileID: 2800000, guid: fbba0039f077dc64a9eda461f60430ea, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _DistortTex:
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _MainTex:
-        m_Texture: {fileID: 2800000, guid: 20a90ab6011908a4ea6dc975d07d7af7, type: 3}
+        m_Texture: {fileID: 2800000, guid: d58f9f8bd461b5744a62ecc6a7719175, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _OverlayTex:

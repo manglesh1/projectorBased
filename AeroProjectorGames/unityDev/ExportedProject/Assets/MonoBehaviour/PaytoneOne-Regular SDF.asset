@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -667331979, guid: 67dfb1fdfb2b407222eda8e23ac8b724, type: 3}
+  m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: PaytoneOne-Regular SDF
   m_EditorClassIdentifier:
   hashCode: 1371661626
-  material: {fileID: 2100000, guid: ebc0775c95b125749a9c7f894bad7665, type: 2}
+  material: {fileID: 2100000, guid: 302799fdeb8fab6409eaeba6638ddae0, type: 2}
   materialHashCode: 654830298
   m_Version: 1.1.0
   m_SourceFontFileGUID: eb9aebf0bea794d44aed859a2e740cdf
@@ -1887,7 +1887,7 @@ MonoBehaviour:
     m_GlyphIndex: 483
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: 2800000, guid: 0bcab4fcab2353d43955db2f064aa3b4, type: 3}
+  - {fileID: 2800000, guid: 48a4b6ffcd98468489a45b0a5d0a7920, type: 3}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 0

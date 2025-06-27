@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: AlignmentSample
   m_EditorClassIdentifier:
   _processingBlocks:
-  - {fileID: 11400000, guid: b852edc7f2fd9e841831735b114d22b2, type: 2}
+  - {fileID: 11400000, guid: 107e7c1feee22db45b644a06a49768dc, type: 2}

@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: BGSegMat
-  m_Shader: {fileID: 4800000, guid: afbb1815234562d4f8b203997a176c1c, type: 3}
+  m_Shader: {fileID: 4800000, guid: 1cfbb1bd8cfc9714fbef35655fb04ff1, type: 3}
   m_ShaderKeywords: _EMISSION _HASCOLOR_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0

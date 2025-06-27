@@ -20,17 +20,13 @@ namespace Detection.Commands
 
 		public RaycastResult GetRayCasts(PointerEventData pointerData, Vector3 localPosition)
 		{
-			switch (gameState.GamePhysicsMode)
+			return gameState.GamePhysicsMode switch
 			{
-			case GamePhysicsMode.Graphics:
-				return graphicsStrategy.GetRayCasts(pointerData, localPosition);
-			case GamePhysicsMode.Physics2D:
-				return physics2dStrategy.GetRayCasts(pointerData, localPosition);
-			case GamePhysicsMode.Physics3D:
-				return physics3dStrategy.GetRayCasts(pointerData, localPosition);
-			default:
-				return default(RaycastResult);
-			}
+				GamePhysicsMode.Graphics => graphicsStrategy.GetRayCasts(pointerData, localPosition), 
+				GamePhysicsMode.Physics2D => physics2dStrategy.GetRayCasts(pointerData, localPosition), 
+				GamePhysicsMode.Physics3D => physics3dStrategy.GetRayCasts(pointerData, localPosition), 
+				_ => default(RaycastResult), 
+			};
 		}
 	}
 }

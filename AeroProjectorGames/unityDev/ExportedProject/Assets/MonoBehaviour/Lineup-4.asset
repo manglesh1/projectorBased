@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 0
   gameId: 5
   gameName: Lineup-4
-  gameIcon: {fileID: 21300000, guid: a0b73d316eea64e46bdf45d7f2c73170, type: 2}
-  gamePrefab: {fileID: 1313855827868423, guid: 4db90c539f2abc44aa46f1a8c26b2656, type: 2}
+  gameIcon: {fileID: 21300000, guid: 38681d61a4bcf64458958a4cd06f5596, type: 2}
+  gamePrefab: {fileID: 1025391375423516, guid: 2278220f8d6073e4396c466e377732d0, type: 2}
   weeklyFreeTrial: 0
   subGameSelectionPrefab: {fileID: 0}

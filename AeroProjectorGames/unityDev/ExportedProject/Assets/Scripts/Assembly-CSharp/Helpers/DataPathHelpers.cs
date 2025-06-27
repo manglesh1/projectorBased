@@ -80,15 +80,12 @@ namespace Helpers
 
 		private static string GetLauncherFilename()
 		{
-			switch (Application.platform)
+			return Application.platform switch
 			{
-			case RuntimePlatform.WindowsPlayer:
-				return "launcher.exe";
-			case RuntimePlatform.LinuxPlayer:
-				return "launcher.x86_64";
-			default:
-				throw new ArgumentOutOfRangeException();
-			}
+				RuntimePlatform.WindowsPlayer => "launcher.exe", 
+				RuntimePlatform.LinuxPlayer => "launcher.x86_64", 
+				_ => throw new ArgumentOutOfRangeException(), 
+			};
 		}
 	}
 }

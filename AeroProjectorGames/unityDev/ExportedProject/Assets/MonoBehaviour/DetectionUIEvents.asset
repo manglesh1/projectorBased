@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce9650fe5eaaf82ad6850cddf61e01ad, type: 3}
   m_Name: DetectionUIEvents
   m_EditorClassIdentifier:
-  detectionUIState: {fileID: 11400000, guid: bb49886e2e1e5a64b88e76f9e89fd1f1, type: 2}
-  securityEvents: {fileID: 11400000, guid: 6f9242ff5aa7664489a6760be6a8ccbd, type: 2}
+  detectionUIState: {fileID: 11400000, guid: 75c79dd51674465449b8669c5cb555cd, type: 2}
+  securityEvents: {fileID: 11400000, guid: 0e630fc79826c144cb8724e1d5d8c458, type: 2}

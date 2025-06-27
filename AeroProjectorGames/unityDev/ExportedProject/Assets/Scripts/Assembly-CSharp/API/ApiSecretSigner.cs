@@ -12,24 +12,19 @@ namespace API
 
 		public static bool IsValidData(string stringToSign, string providedHash, ApiSecretSignerType keyType)
 		{
-			using (HMACSHA256 hMACSHA = new HMACSHA256(Encoding.UTF8.GetBytes(GetSigningSecret(keyType))))
-			{
-				byte[] bytes = Encoding.UTF8.GetBytes(stringToSign);
-				return Convert.ToBase64String(hMACSHA.ComputeHash(bytes)) == providedHash;
-			}
+			using HMACSHA256 hMACSHA = new HMACSHA256(Encoding.UTF8.GetBytes(GetSigningSecret(keyType)));
+			byte[] bytes = Encoding.UTF8.GetBytes(stringToSign);
+			return Convert.ToBase64String(hMACSHA.ComputeHash(bytes)) == providedHash;
 		}
 
 		private static string GetSigningSecret(ApiSecretSignerType keyType)
 		{
-			switch (keyType)
+			return keyType switch
 			{
-			default:
-				throw new InvalidOperationException($"Unexpected GetSigningSecret value: {keyType}");
-			case ApiSecretSignerType.SessionDataKey:
-				return "OztDJ1hOy3yCAml2";
-			case ApiSecretSignerType.GeneralDataKey:
-				return "LCCS3f9xbbbo7PY5";
-			}
+				ApiSecretSignerType.SessionDataKey => "OztDJ1hOy3yCAml2", 
+				ApiSecretSignerType.GeneralDataKey => "LCCS3f9xbbbo7PY5", 
+				_ => throw new InvalidOperationException($"Unexpected GetSigningSecret value: {keyType}"), 
+			};
 		}
 	}
 }

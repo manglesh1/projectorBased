@@ -21,19 +21,14 @@ namespace Detection.Commands
 			int ratioLeftBoundary = gameBoardCoordinates.GetRatioLeftBoundary(realWorldCoordinates.y);
 			int ratioRightBoundary = gameBoardCoordinates.GetRatioRightBoundary(realWorldCoordinates.y);
 			int num = gameBoardCoordinates.GetMinTop() - getDownwardScale.Execute();
-			switch (fromRealWorldCoordinates)
+			return fromRealWorldCoordinates switch
 			{
-			case GameBoardQuadrantEnum.TopLeft:
-				return realWorldCoordinates.x >= ratioLeftBoundary && realWorldCoordinates.y >= num;
-			case GameBoardQuadrantEnum.TopRight:
-				return realWorldCoordinates.x <= ratioRightBoundary && realWorldCoordinates.y >= num;
-			case GameBoardQuadrantEnum.BottomRight:
-				return realWorldCoordinates.x <= ratioRightBoundary && realWorldCoordinates.y <= ratioBottomBoundary;
-			case GameBoardQuadrantEnum.BottomLeft:
-				return realWorldCoordinates.x >= ratioLeftBoundary && realWorldCoordinates.y <= ratioBottomBoundary;
-			default:
-				throw new InvalidOperationException("Unknown GameBoardQuadrant");
-			}
+				GameBoardQuadrantEnum.TopLeft => realWorldCoordinates.x >= ratioLeftBoundary && realWorldCoordinates.y >= num, 
+				GameBoardQuadrantEnum.TopRight => realWorldCoordinates.x <= ratioRightBoundary && realWorldCoordinates.y >= num, 
+				GameBoardQuadrantEnum.BottomRight => realWorldCoordinates.x <= ratioRightBoundary && realWorldCoordinates.y <= ratioBottomBoundary, 
+				GameBoardQuadrantEnum.BottomLeft => realWorldCoordinates.x >= ratioLeftBoundary && realWorldCoordinates.y <= ratioBottomBoundary, 
+				_ => throw new InvalidOperationException("Unknown GameBoardQuadrant"), 
+			};
 		}
 	}
 }

@@ -255,12 +255,10 @@ namespace MHLab.Patch.Core.Client.Advanced.IO.Chunked
 
 		public string DownloadString(DownloadEntry entry)
 		{
-			using (WebClient webClient = new WebClient())
-			{
-				webClient.Credentials = Credentials;
-				webClient.Proxy = Proxy;
-				return webClient.DownloadString(entry.RemoteUrl);
-			}
+			using WebClient webClient = new WebClient();
+			webClient.Credentials = Credentials;
+			webClient.Proxy = Proxy;
+			return webClient.DownloadString(entry.RemoteUrl);
 		}
 
 		public void Cancel()

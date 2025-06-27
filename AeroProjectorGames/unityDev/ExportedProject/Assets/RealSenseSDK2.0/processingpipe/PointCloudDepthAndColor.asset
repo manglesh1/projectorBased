@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: PointCloudDepthAndColor
   m_EditorClassIdentifier:
   _processingBlocks:
-  - {fileID: 11400000, guid: fb46190df321dc84dbe1d811c5f60aaa, type: 2}
+  - {fileID: 11400000, guid: 0bdf2442021e8c748af2cfc94fef1d78, type: 2}

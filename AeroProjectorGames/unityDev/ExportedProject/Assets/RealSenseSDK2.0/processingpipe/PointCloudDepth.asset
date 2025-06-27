@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: PointCloudDepth
   m_EditorClassIdentifier:
   _processingBlocks:
-  - {fileID: 11400000, guid: 3fa279b6a77dcb74db375c607c2c3e7c, type: 2}
-  - {fileID: 11400000, guid: 03e96ac7728c1224bbbb009002d443de, type: 2}
+  - {fileID: 11400000, guid: f90aa872418ec864398cfb5e99e8306c, type: 2}
+  - {fileID: 11400000, guid: a3450dd293467f146b9dba3f8556a4cd, type: 2}

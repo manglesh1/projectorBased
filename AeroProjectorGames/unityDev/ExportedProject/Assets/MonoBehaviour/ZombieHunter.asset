@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 1
   gameId: 2
   gameName: Zombie Hunter
-  gameIcon: {fileID: 21300000, guid: 86d094b0fddeaf446b3a0edc058d1eb4, type: 2}
-  gamePrefab: {fileID: 1548939940631904, guid: e5e67eaef189f9643873a767aab32fcb, type: 2}
+  gameIcon: {fileID: 21300000, guid: 852f8118af395d841a88c37ec275ff42, type: 2}
+  gamePrefab: {fileID: 1996270345923935, guid: 0cfa202d3334eb943ae9892c496d6191, type: 2}
   weeklyFreeTrial: 0
-  subGameSelectionPrefab: {fileID: 1083149119245923, guid: f1e3327de7f94b1439ef07a7bb2130ab, type: 2}
+  subGameSelectionPrefab: {fileID: 1208018476822037, guid: 7a269c7d5c58d794bab675d6580c4c39, type: 2}

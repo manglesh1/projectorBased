@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 0
   gameId: 11
   gameName: Cricket
-  gameIcon: {fileID: 21300000, guid: 1ba657212f076384f9bdb83731f6c7df, type: 2}
-  gamePrefab: {fileID: 1919015636185468, guid: 7bb9df2c05fc10a4fa768dc658d91d35, type: 2}
+  gameIcon: {fileID: 21300000, guid: 619458f472b850b42bb5e23de661c7ec, type: 2}
+  gamePrefab: {fileID: 1917400303093517, guid: a4b92185f2dae284487aa4394f48bc7d, type: 2}
   weeklyFreeTrial: 0
   subGameSelectionPrefab: {fileID: 0}

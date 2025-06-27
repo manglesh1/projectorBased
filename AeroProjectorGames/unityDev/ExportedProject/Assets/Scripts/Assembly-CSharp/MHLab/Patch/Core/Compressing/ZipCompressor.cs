@@ -11,20 +11,16 @@ namespace MHLab.Patch.Core.Compressing
 		public static void ZipFolder(string outPathname, string password, string folderName, int compressionLevel, Func<string, bool> filesFilter = null)
 		{
 			ZipConstants.DefaultCodePage = 0;
-			using (FileStream baseOutputStream = File.Create(outPathname))
-			{
-				using (ZipOutputStream zipOutputStream = new ZipOutputStream(baseOutputStream))
-				{
-					zipOutputStream.SetLevel(compressionLevel);
-					zipOutputStream.Password = password;
-					int length = folderName.Length;
-					char directorySeparatorChar = Path.DirectorySeparatorChar;
-					int folderOffset = length + ((!folderName.EndsWith(directorySeparatorChar.ToString())) ? 1 : 0);
-					CompressFolder(folderName, zipOutputStream, folderOffset, filesFilter);
-					zipOutputStream.IsStreamOwner = true;
-					zipOutputStream.Close();
-				}
-			}
+			using FileStream baseOutputStream = File.Create(outPathname);
+			using ZipOutputStream zipOutputStream = new ZipOutputStream(baseOutputStream);
+			zipOutputStream.SetLevel(compressionLevel);
+			zipOutputStream.Password = password;
+			int length = folderName.Length;
+			char directorySeparatorChar = Path.DirectorySeparatorChar;
+			int folderOffset = length + ((!folderName.EndsWith(directorySeparatorChar.ToString())) ? 1 : 0);
+			CompressFolder(folderName, zipOutputStream, folderOffset, filesFilter);
+			zipOutputStream.IsStreamOwner = true;
+			zipOutputStream.Close();
 		}
 
 		private static void CompressFolder(string path, ZipOutputStream zipStream, int folderOffset, Func<string, bool> filesFilter)
@@ -82,10 +78,8 @@ namespace MHLab.Patch.Core.Compressing
 						{
 							Directory.CreateDirectory(directoryName);
 						}
-						using (FileStream destination = File.Create(path))
-						{
-							StreamUtils.Copy(inputStream, destination, buffer);
-						}
+						using FileStream destination = File.Create(path);
+						StreamUtils.Copy(inputStream, destination, buffer);
 					}
 				}
 			}

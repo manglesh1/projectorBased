@@ -144,21 +144,15 @@ namespace Assets.Games.Norse.Scripts
 
 		private Sprite GetPowerUpSprite()
 		{
-			switch (norseState.SelectedPowerUp)
+			return norseState.SelectedPowerUp switch
 			{
-			case NorsePowerUpEnum.Attack:
-				return imageAttack;
-			case NorsePowerUpEnum.ExtraLife:
-				return imageExtraLife;
-			case NorsePowerUpEnum.Protect:
-				return imageProtect;
-			case NorsePowerUpEnum.Reverse:
-				return imageReverse;
-			case NorsePowerUpEnum.Steal:
-				return imageSteal;
-			default:
-				return imageUnknown;
-			}
+				NorsePowerUpEnum.Attack => imageAttack, 
+				NorsePowerUpEnum.ExtraLife => imageExtraLife, 
+				NorsePowerUpEnum.Protect => imageProtect, 
+				NorsePowerUpEnum.Reverse => imageReverse, 
+				NorsePowerUpEnum.Steal => imageSteal, 
+				_ => imageUnknown, 
+			};
 		}
 
 		private Vector2 GetRandomAvailablePosition()

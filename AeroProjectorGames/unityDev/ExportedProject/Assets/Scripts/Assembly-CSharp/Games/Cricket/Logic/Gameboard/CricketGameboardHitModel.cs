@@ -26,23 +26,16 @@ namespace Games.Cricket.Logic.Gameboard
 		public ScoringModifier GetScoringModifier()
 		{
 			GameboardRingModifier modifier = Modifier;
-			switch (modifier)
+			return modifier switch
 			{
-			case GameboardRingModifier.SingleThin:
-				return ScoringModifier.Single;
-			case GameboardRingModifier.SingleWide:
-				return ScoringModifier.Single;
-			case GameboardRingModifier.Double:
-				return ScoringModifier.Double;
-			case GameboardRingModifier.Triple:
-				return ScoringModifier.Triple;
-			case GameboardRingModifier.OuterBull:
-				return ScoringModifier.Single;
-			case GameboardRingModifier.InnerBull:
-				return ScoringModifier.Double;
-			default:
-				throw new InvalidOperationException($"Unexpected GetMessageStylePanel value: {modifier}");
-			}
+				GameboardRingModifier.SingleThin => ScoringModifier.Single, 
+				GameboardRingModifier.SingleWide => ScoringModifier.Single, 
+				GameboardRingModifier.Double => ScoringModifier.Double, 
+				GameboardRingModifier.Triple => ScoringModifier.Triple, 
+				GameboardRingModifier.OuterBull => ScoringModifier.Single, 
+				GameboardRingModifier.InnerBull => ScoringModifier.Double, 
+				_ => throw new InvalidOperationException($"Unexpected GetMessageStylePanel value: {modifier}"), 
+			};
 		}
 	}
 }

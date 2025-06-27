@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d110c37c3af4095d3afbec6e0670d891, type: 3}
   m_Name: GetDistanceVectorsCommand
   m_EditorClassIdentifier:
-  roi: {fileID: 11400000, guid: f69b652ff032af84980e89a4c9851af4, type: 2}
+  roi: {fileID: 11400000, guid: 9ba37230eb3609947a21c0dffa8af061, type: 2}

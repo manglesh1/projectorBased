@@ -7,8 +7,8 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Windows-Patching/Windows-PreGame.unity
-    guid: a6fbf991abb22b84d98fd67a8c83026e
+    guid: a70deda4d07531841941b7b027584612
   - enabled: 1
     path: Assets/Scenes/AxeApp_Main_Scene.unity
-    guid: fe1c32f66c4f58845bfedf82dd04a1c9
+    guid: 9e291b336cc76b74b88bd8ff0d7b0077
   m_configObjects: {}

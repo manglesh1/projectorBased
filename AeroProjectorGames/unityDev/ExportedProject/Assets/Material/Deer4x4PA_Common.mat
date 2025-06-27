@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Deer4x4PA_Common
-  m_Shader: {fileID: 4800000, guid: f1d046fcf1de0fe44a5b3ce74d53c8c9, type: 3}
+  m_Shader: {fileID: 4800000, guid: bb1337178893936428ae59fae5a0fd7f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -24,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
       _Gradient:
-        m_Texture: {fileID: 2800000, guid: 3a5d9717a690d3046ab6d603c930b3d2, type: 3}
+        m_Texture: {fileID: 2800000, guid: b6b4b491a78c7a54e9e7de428baddc8f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _texcoord:

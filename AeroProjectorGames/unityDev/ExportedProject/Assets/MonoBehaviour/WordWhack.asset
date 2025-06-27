@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 1
   gameId: 16
   gameName: Word Whack
-  gameIcon: {fileID: 21300000, guid: ff54464529caabf48bf9d9af5faced94, type: 2}
-  gamePrefab: {fileID: 1969635295761176, guid: 6ca1503ba01017141a066abee0781ffc, type: 2}
+  gameIcon: {fileID: 21300000, guid: dc3817e148f464c4cb0a2c2acd707f06, type: 2}
+  gamePrefab: {fileID: 1662384497996188, guid: f9dba494d2606fc43a653ae66a70b39d, type: 2}
   weeklyFreeTrial: 0
   subGameSelectionPrefab: {fileID: 0}

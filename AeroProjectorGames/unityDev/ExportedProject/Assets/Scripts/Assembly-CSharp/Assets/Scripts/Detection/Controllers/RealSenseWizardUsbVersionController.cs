@@ -23,14 +23,12 @@ namespace Assets.Scripts.Detection.Controllers
 
 		private bool CheckUsbVersion()
 		{
-			using (Context context = new Context())
+			using Context context = new Context();
+			if (context.QueryDevices().Count == 0)
 			{
-				if (context.QueryDevices().Count == 0)
-				{
-					return false;
-				}
-				return context.Devices[0].Info[CameraInfo.UsbTypeDescriptor].Equals("3.2");
+				return false;
 			}
+			return context.Devices[0].Info[CameraInfo.UsbTypeDescriptor].Equals("3.2");
 		}
 
 		private void OnEnable()

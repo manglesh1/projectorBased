@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Trail24
-  m_Shader: {fileID: 4800000, guid: 1440a03c1b74dba4584bfdda536d7084, type: 3}
+  m_Shader: {fileID: 4800000, guid: d32176ceefd48f449a08b3c66f2b3cd1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -24,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
       _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7327eb3817fec85449e53f16b2572390, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6909cd80a7a3c984883d527790750cf8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: {}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ProcessingBlockPollingStrategy
   m_EditorClassIdentifier:
   enabled: 1
-  getDistanceVectors: {fileID: 11400000, guid: 4733b93f3ead8b84d8ad9cbd6df00656, type: 2}
-  vectorHandler: {fileID: 11400000, guid: 25fe7b92410db404ca71189f12692a4b, type: 2}
-  voiFactory: {fileID: 11400000, guid: 0557f563eb3265d48aa0c4393fe5a0a3, type: 2}
+  getDistanceVectors: {fileID: 11400000, guid: 463f560c7d20d154aaa185ce4750c5e3, type: 2}
+  vectorHandler: {fileID: 11400000, guid: 52c4f4c68276e694182dac7771e7c40f, type: 2}
+  voiFactory: {fileID: 11400000, guid: 9d0a8af3d5196454ebc091737f599886, type: 2}

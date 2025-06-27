@@ -47,10 +47,8 @@ namespace Admin_Panel
 			{
 				return;
 			}
-			using (StreamReader streamReader = new StreamReader(path))
-			{
-				VersionNumber = Rijndael.Decrypt(streamReader.ReadToEnd(), settings.EncryptionKeyphrase).Replace("\"", "");
-			}
+			using StreamReader streamReader = new StreamReader(path);
+			VersionNumber = Rijndael.Decrypt(streamReader.ReadToEnd(), settings.EncryptionKeyphrase).Replace("\"", "");
 		}
 	}
 }

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PaytoneOne-Regular SDF Material
-  m_Shader: {fileID: 4800000, guid: 442ed71f091e1214aa7dc063e46ddd01, type: 3}
+  m_Shader: {fileID: 4800000, guid: f0ec520811799fa45ad01a5dc6121c4e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0bcab4fcab2353d43955db2f064aa3b4, type: 3}
+        m_Texture: {fileID: 2800000, guid: 48a4b6ffcd98468489a45b0a5d0a7920, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _OutlineTex:

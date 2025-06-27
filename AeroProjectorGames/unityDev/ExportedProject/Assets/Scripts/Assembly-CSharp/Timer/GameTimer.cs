@@ -313,16 +313,11 @@ namespace Timer
 
 		private void SetTimerFontColor(TimerStateEnum currentStateEnum)
 		{
-			Color color;
-			switch (currentStateEnum)
+			Color color = currentStateEnum switch
 			{
-			default:
-				color = TIMER_STANDARD_COLOR;
-				break;
-			case TimerStateEnum.Paused:
-				color = TIMER_PAUSED_COLOR;
-				break;
-			}
+				TimerStateEnum.Paused => TIMER_PAUSED_COLOR, 
+				_ => TIMER_STANDARD_COLOR, 
+			};
 			countdownLabelText.color = color;
 			countdownText.color = color;
 		}

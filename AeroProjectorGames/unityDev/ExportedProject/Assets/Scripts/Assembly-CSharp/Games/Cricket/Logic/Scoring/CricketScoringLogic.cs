@@ -144,19 +144,14 @@ namespace Games.Cricket.Logic.Scoring
 
 		private ScoreStatus GetNextScoreStatus(int totalHits)
 		{
-			switch (totalHits)
+			return totalHits switch
 			{
-			case 0:
-				return ScoreStatus.Available;
-			case 1:
-				return ScoreStatus.Available;
-			case 2:
-				return ScoreStatus.Available;
-			case 3:
-				return ScoreStatus.Open;
-			default:
-				return ScoreStatus.Open;
-			}
+				0 => ScoreStatus.Available, 
+				1 => ScoreStatus.Available, 
+				2 => ScoreStatus.Available, 
+				3 => ScoreStatus.Open, 
+				_ => ScoreStatus.Open, 
+			};
 		}
 
 		private void NextThrow()

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: CustomThresholdFilter
   m_EditorClassIdentifier:
   enabled: 1
-  cameraSettings: {fileID: 11400000, guid: 199cffe0f989c5f4791901ce6586f69a, type: 2}
-  getDownwardOffset: {fileID: 11400000, guid: 9486a61caea81e8458bb4373521dab46, type: 2}
+  cameraSettings: {fileID: 11400000, guid: 56228973e80735f4b96e9956d44bfe98, type: 2}
+  getDownwardOffset: {fileID: 11400000, guid: 044f2bf949ab2724096c68177c96fc07, type: 2}

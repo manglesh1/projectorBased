@@ -25,10 +25,8 @@ namespace Detection.Factories
 
 		private static bool UseRealSense()
 		{
-			using (Context context = new Context())
-			{
-				return context.QueryDevices().Count > 0;
-			}
+			using Context context = new Context();
+			return context.QueryDevices().Count > 0;
 		}
 	}
 }

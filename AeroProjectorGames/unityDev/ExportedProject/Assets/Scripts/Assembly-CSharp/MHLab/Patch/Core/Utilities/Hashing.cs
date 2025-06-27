@@ -11,22 +11,16 @@ namespace MHLab.Patch.Core.Utilities
 
 		public static string GetFileHash(string filePath, IFileSystem fileSystem)
 		{
-			using (SHA1CryptoServiceProvider hasher = new SHA1CryptoServiceProvider())
-			{
-				return GetHash(filePath, hasher, fileSystem);
-			}
+			using SHA1CryptoServiceProvider hasher = new SHA1CryptoServiceProvider();
+			return GetHash(filePath, hasher, fileSystem);
 		}
 
 		private static string GetHash(string filePath, HashAlgorithm hasher, IFileSystem fileSystem)
 		{
-			using (Stream stream = fileSystem.GetFileStream((FilePath)filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-			{
-				int bufferSize = (int)Math.Max(1L, Math.Min(stream.Length, 8388608L));
-				using (BufferedStream s = new BufferedStream(stream, bufferSize))
-				{
-					return GetHash(s, hasher);
-				}
-			}
+			using Stream stream = fileSystem.GetFileStream((FilePath)filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+			int bufferSize = (int)Math.Max(1L, Math.Min(stream.Length, 8388608L));
+			using BufferedStream s = new BufferedStream(stream, bufferSize);
+			return GetHash(s, hasher);
 		}
 
 		private static string GetHash(Stream s, HashAlgorithm hasher)

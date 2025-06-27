@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 0
   gameId: 8
   gameName: IATF Target
-  gameIcon: {fileID: 21300000, guid: 68edcc764f9b47d47b628b24f4af7761, type: 2}
-  gamePrefab: {fileID: 1487085483758383, guid: 94c86ecb96b3ab14aa60f150496b8dbd, type: 2}
+  gameIcon: {fileID: 21300000, guid: d64b2b4952f60ca4f9a94a67a63d49af, type: 2}
+  gamePrefab: {fileID: 1431223556394969, guid: 63c5b34e8fabf9143bcecd2298f0893f, type: 2}
   weeklyFreeTrial: 0
   subGameSelectionPrefab: {fileID: 0}

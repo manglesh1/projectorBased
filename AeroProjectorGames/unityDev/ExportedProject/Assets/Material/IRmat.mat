@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: IRmat
-  m_Shader: {fileID: 4800000, guid: df9e1264cc624ae488088c34b4ddee4d, type: 3}
+  m_Shader: {fileID: 4800000, guid: 61aefa2ceca274a4d8117d80cd8af6dd, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0

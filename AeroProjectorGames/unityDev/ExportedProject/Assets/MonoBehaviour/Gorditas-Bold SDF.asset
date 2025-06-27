@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -667331979, guid: 67dfb1fdfb2b407222eda8e23ac8b724, type: 3}
+  m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Gorditas-Bold SDF
   m_EditorClassIdentifier:
   hashCode: 1596476680
-  material: {fileID: 2100000, guid: 57840d1147564a64cbb7f2c6a78c4968, type: 2}
+  material: {fileID: 2100000, guid: 72e88ed2dd4b60a45a734ad5fdb23b6a, type: 2}
   materialHashCode: 92740520
   m_Version: 1.1.0
   m_SourceFontFileGUID: f878a6df5765a1342829b395c5eea025
@@ -1868,7 +1868,7 @@ MonoBehaviour:
     m_GlyphIndex: 213
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: 2800000, guid: cfd30afb58b3ee94b9ae58cf1d488a26, type: 3}
+  - {fileID: 2800000, guid: d1fb16701a30d504e95379a8bd46e3d6, type: 3}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 0

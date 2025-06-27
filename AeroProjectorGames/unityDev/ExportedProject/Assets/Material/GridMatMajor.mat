@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: GridMatMajor
-  m_Shader: {fileID: 4800000, guid: 9f02382a61279d6438622c0e5b935cee, type: 3}
+  m_Shader: {fileID: 4800000, guid: 7d57ca919779ecd45b5dad484bf26cf4, type: 3}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _COLORCOLOR_ON _EMISSION
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0

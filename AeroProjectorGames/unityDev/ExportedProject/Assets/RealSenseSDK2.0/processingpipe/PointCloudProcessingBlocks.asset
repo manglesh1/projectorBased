@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Name: PointCloudProcessingBlocks
   m_EditorClassIdentifier:
   _processingBlocks:
-  - {fileID: 11400000, guid: 570f975f494adf44c846920abbb5e27a, type: 2}
-  - {fileID: 11400000, guid: 26b5512e9ef89d54cb04a646fd7b9c37, type: 2}
-  - {fileID: 11400000, guid: 8a5923c355a5c2e42916bb54b546eae9, type: 2}
-  - {fileID: 11400000, guid: 96b09e0fbfb8a6a4490d7c5aadb4447c, type: 2}
-  - {fileID: 11400000, guid: 965fed8312d494a4b92c5b9afffb4c44, type: 2}
-  - {fileID: 11400000, guid: 6e06abb2476d60242b62da447d2ffe78, type: 2}
-  - {fileID: 11400000, guid: f11f7ba0432dc1c47bb5321e3b5c2833, type: 2}
-  - {fileID: 11400000, guid: 4e36a5e71cd5ca845ae057db90c12378, type: 2}
-  - {fileID: 11400000, guid: 219c61f58bd006148b9b1f8f2e3ff08d, type: 2}
+  - {fileID: 11400000, guid: 4444719da62b9764486b363b21e0932b, type: 2}
+  - {fileID: 11400000, guid: a3034945cb731ac4a81f56b956e6f013, type: 2}
+  - {fileID: 11400000, guid: 368e94d0cbb83ea4bb7ac4fdfa112c5d, type: 2}
+  - {fileID: 11400000, guid: da662274de90ebb49b72c13ec5cbbfa4, type: 2}
+  - {fileID: 11400000, guid: 4caabb4977d10eb4ca8b29d8ffb404db, type: 2}
+  - {fileID: 11400000, guid: fb7e3419df439f14d8a87b002dd2168f, type: 2}
+  - {fileID: 11400000, guid: 1f2db10e4ae14a74984c0515ada7fbee, type: 2}
+  - {fileID: 11400000, guid: 250f7e2af464934479f314d1c4849838, type: 2}
+  - {fileID: 11400000, guid: bcaceac3e7e60dd4abf87281d6bb12c7, type: 2}

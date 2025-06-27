@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 0
   gameId: 9
   gameName: 21
-  gameIcon: {fileID: 21300000, guid: d76754ba3e2a5b142815bb945ea21651, type: 2}
-  gamePrefab: {fileID: 1937239043629805, guid: e491b19d72fcf0e47a35be7dacd55776, type: 2}
+  gameIcon: {fileID: 21300000, guid: 5db67f1adefa2454384933c36a8c3f35, type: 2}
+  gamePrefab: {fileID: 1131575674166627, guid: 1d3f13fb25c5c5449b17ccda6bf21d5f, type: 2}
   weeklyFreeTrial: 0
   subGameSelectionPrefab: {fileID: 0}

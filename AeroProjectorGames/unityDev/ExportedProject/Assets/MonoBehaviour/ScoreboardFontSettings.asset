@@ -17,12 +17,12 @@ MonoBehaviour:
   maxFontSize: 28
   minFontSize: 10
   fontSelectionList:
-  - {fileID: 11400000, guid: bcb06b9143befde4eab4dfe99c63de38, type: 2}
-  - {fileID: 11400000, guid: 478a4929dbf82b6448c9056688275940, type: 2}
-  - {fileID: 11400000, guid: 62beb6a173508b54ab7ef0b34f802e22, type: 2}
-  - {fileID: 11400000, guid: b6949802deb2d09439b29c1b0682f377, type: 2}
-  - {fileID: 11400000, guid: c3662769fec00294b808c7d51013dd2a, type: 2}
-  - {fileID: 11400000, guid: 93304065573d4f24ba6621b2b4a80db2, type: 2}
-  - {fileID: 11400000, guid: 18bebf74c8170d34fae814850ea53f3c, type: 2}
-  - {fileID: 11400000, guid: 944514088590fae47a68ddb5bdf8643f, type: 2}
-  scoreboardSizeAndPositionState: {fileID: 11400000, guid: dd70be44670b6984f8e1f71dde1321c2, type: 2}
+  - {fileID: 11400000, guid: 89cbf93345fa2b6429ed4c69fc91aaca, type: 2}
+  - {fileID: 11400000, guid: e7f41e833f066f14b8007df05fc37e28, type: 2}
+  - {fileID: 11400000, guid: df80d47eef3729c4c904a1bc75b1505f, type: 2}
+  - {fileID: 11400000, guid: 8b20451df86b012408d0be99e08a9acb, type: 2}
+  - {fileID: 11400000, guid: 44b672c954ba26d49a42418175408a55, type: 2}
+  - {fileID: 11400000, guid: c707d44a13220014eb42166524a8542a, type: 2}
+  - {fileID: 11400000, guid: c888a77760ea8ba418cb4cbc61e403e3, type: 2}
+  - {fileID: 11400000, guid: 2c51a287991a91540b66e41d8966c10a, type: 2}
+  scoreboardSizeAndPositionState: {fileID: 11400000, guid: 1235eb5b8bbd81348bb9faf50159380a, type: 2}

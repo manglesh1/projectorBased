@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: depthMat
-  m_Shader: {fileID: 4800000, guid: 2f6d3aaa84f19ff4fb72720bbba67091, type: 3}
+  m_Shader: {fileID: 4800000, guid: d9ad34a6d3b76f042b45e8bef865f160, type: 3}
   m_ShaderKeywords: _COLORMAP_VIRIDIS
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
       _Colormaps:
-        m_Texture: {fileID: 2800000, guid: 7c81f209feb32ea4e94ac2ee95ebafdb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 03313422ad40409489c7f137d106c73d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _MainTex:

@@ -169,18 +169,14 @@ namespace MHLab.Patch.Core.IO
 		public static void CreateShortcut(string targetFile, string shortcutFile)
 		{
 			File.Delete(shortcutFile);
-			using (FileStream stream = new FileStream(shortcutFile, FileMode.Create, FileAccess.ReadWrite))
-			{
-				using (StreamWriter streamWriter = new StreamWriter(stream))
-				{
-					streamWriter.WriteLine("[InternetShortcut]");
-					streamWriter.WriteLine("URL=file:///" + targetFile);
-					streamWriter.WriteLine("IconIndex=0");
-					streamWriter.WriteLine("WorkingDirectory=" + PathsManager.GetDirectoryPath(targetFile));
-					streamWriter.WriteLine("IconFile=" + targetFile.Replace('\\', '/'));
-					streamWriter.Flush();
-				}
-			}
+			using FileStream stream = new FileStream(shortcutFile, FileMode.Create, FileAccess.ReadWrite);
+			using StreamWriter streamWriter = new StreamWriter(stream);
+			streamWriter.WriteLine("[InternetShortcut]");
+			streamWriter.WriteLine("URL=file:///" + targetFile);
+			streamWriter.WriteLine("IconIndex=0");
+			streamWriter.WriteLine("WorkingDirectory=" + PathsManager.GetDirectoryPath(targetFile));
+			streamWriter.WriteLine("IconFile=" + targetFile.Replace('\\', '/'));
+			streamWriter.Flush();
 		}
 
 		public static bool IsDirectoryWritable(string directoryPath, bool throwOnFail = false)

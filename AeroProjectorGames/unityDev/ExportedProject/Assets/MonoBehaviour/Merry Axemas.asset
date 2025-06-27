@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 0
   gameId: 6
   gameName: Merry Axe-mas
-  gameIcon: {fileID: 21300000, guid: 010ec4dc9ede77443a91efdd0abb9419, type: 2}
-  gamePrefab: {fileID: 1600637872344614, guid: 46be4c4b37ab52a408fc8775e0d31d87, type: 2}
+  gameIcon: {fileID: 21300000, guid: 77790b7cad1c7ca4b8ef0866d1ffa575, type: 2}
+  gamePrefab: {fileID: 1865315256814994, guid: 9eac30d6203505b4b894165853fbb306, type: 2}
   weeklyFreeTrial: 0
   subGameSelectionPrefab: {fileID: 0}

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9963bc78179996e877a2503535e16c27, type: 3}
   m_Name: SendClickEventFactory
   m_EditorClassIdentifier:
-  gameState: {fileID: 11400000, guid: 5c4074dc39678304492138a6a7af6271, type: 2}
-  buttonStrategy: {fileID: 11400000, guid: 2e5b4c5d441df394aaeb0d632c424b39, type: 2}
-  colliderStrategy: {fileID: 11400000, guid: 83084c9339f70ef4bb9fa6278b67cfd9, type: 2}
-  eventTriggerStrategy: {fileID: 11400000, guid: 0658ad9eb2809f442b097ae78ad77f21, type: 2}
-  spriteStrategy: {fileID: 11400000, guid: 98dae1b8763e66447abe064910ec8d03, type: 2}
-  onPointerClickUpwardsStrategy: {fileID: 11400000, guid: 6869eff706410834985d504193cf48bc, type: 2}
+  gameState: {fileID: 11400000, guid: 61d7200e8d9821b439266b7abd404240, type: 2}
+  buttonStrategy: {fileID: 11400000, guid: d05144a113a7cca4e8d7d6401a71eb25, type: 2}
+  colliderStrategy: {fileID: 11400000, guid: 821be134817a41841a48a139303a9995, type: 2}
+  eventTriggerStrategy: {fileID: 11400000, guid: a7d511c02db63084f8b5a4e6823fe9db, type: 2}
+  spriteStrategy: {fileID: 11400000, guid: 623ce747a8cdd9b44b693a4d955d614d, type: 2}
+  onPointerClickUpwardsStrategy: {fileID: 11400000, guid: 12005350a29c0594486eb2926d6ce9c1, type: 2}

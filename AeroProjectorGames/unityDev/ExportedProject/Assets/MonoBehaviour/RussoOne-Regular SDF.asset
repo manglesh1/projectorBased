@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -667331979, guid: 67dfb1fdfb2b407222eda8e23ac8b724, type: 3}
+  m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: RussoOne-Regular SDF
   m_EditorClassIdentifier:
   hashCode: 417112074
-  material: {fileID: 2100000, guid: f261a435ff10d424bb186b2e0c2d7da4, type: 2}
+  material: {fileID: 2100000, guid: 10e906b0c5d196f4da8093d31685de45, type: 2}
   materialHashCode: -1606588822
   m_Version: 1.1.0
   m_SourceFontFileGUID: 39ffdfd55f9a56d45a6c371e46bda2ff
@@ -1872,7 +1872,7 @@ MonoBehaviour:
     m_GlyphIndex: 402
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: 2800000, guid: 8d0b0647763b031469e8da1c051d9af9, type: 3}
+  - {fileID: 2800000, guid: df2ec865beb1d434989e1023f1949dde, type: 3}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 0

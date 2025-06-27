@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56e873720656eb6c68d1ebd4509ba96, type: 3}
   m_Name: VectorOfInterestFactory
   m_EditorClassIdentifier:
-  gameBoardCoordinates: {fileID: 11400000, guid: 4b472cfdd5f0b3547ab77900b7447526, type: 2}
-  getCenterPoint: {fileID: 11400000, guid: 4b2d8d1aee3022c4ab8f2098baf0eb70, type: 2}
-  getHighPoint: {fileID: 11400000, guid: bebb77f6501910e488952d3f82ac29af, type: 2}
+  gameBoardCoordinates: {fileID: 11400000, guid: a0036c7c0647b894fa0aa94cf4db1e4c, type: 2}
+  getCenterPoint: {fileID: 11400000, guid: 989a802f2fade8d47a4bf4bd163e8c6c, type: 2}
+  getHighPoint: {fileID: 11400000, guid: a6367612b8d4f7d4991b049a61a0d09c, type: 2}

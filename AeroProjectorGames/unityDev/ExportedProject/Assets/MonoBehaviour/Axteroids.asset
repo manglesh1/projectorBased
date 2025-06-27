@@ -15,7 +15,7 @@ MonoBehaviour:
   detectionEnabled: 0
   gameId: 10
   gameName: Axteroids
-  gameIcon: {fileID: 21300000, guid: e9f2e7d7c24d50a408fa419624ca9169, type: 2}
-  gamePrefab: {fileID: 1520612099820521, guid: 771d654ab348e2940afa857702160f86, type: 2}
+  gameIcon: {fileID: 21300000, guid: b0cb4cf7f399bca4994cf9b66e411722, type: 2}
+  gamePrefab: {fileID: 1075712709746933, guid: 4c47a7920b79eb54982ab2531966f39a, type: 2}
   weeklyFreeTrial: 0
-  subGameSelectionPrefab: {fileID: 1032436702732154, guid: 8212b6d6a96cd854db8c955519b95408, type: 2}
+  subGameSelectionPrefab: {fileID: 1940204305725249, guid: db53bd36b9c37a8428351fc5e19168c0, type: 2}

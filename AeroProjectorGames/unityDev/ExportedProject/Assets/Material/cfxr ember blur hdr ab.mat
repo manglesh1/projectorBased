@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: cfxr ember blur hdr ab
-  m_Shader: {fileID: 4800000, guid: eec93675393708d47bc42955a1b48f05, type: 3}
+  m_Shader: {fileID: 4800000, guid: 867db00afe85cab488023cfea075917b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -46,7 +46,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _MainTex:
-        m_Texture: {fileID: 2800000, guid: 211e7ea3033b3b14783979cf26d05035, type: 3}
+        m_Texture: {fileID: 2800000, guid: c4da47d886b96e743aae23d5f0805eab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _OverlayTex:

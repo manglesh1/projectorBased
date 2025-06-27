@@ -21,10 +21,8 @@ namespace Assets.Scripts.Detection.Controllers
 
 		private bool CameraExists()
 		{
-			using (Context context = new Context())
-			{
-				return context.QueryDevices().Count > 0;
-			}
+			using Context context = new Context();
+			return context.QueryDevices().Count > 0;
 		}
 
 		private void OnEnable()

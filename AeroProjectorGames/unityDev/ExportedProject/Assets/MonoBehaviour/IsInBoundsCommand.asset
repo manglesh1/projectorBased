@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d448d0719276ac893190e54096aafc, type: 3}
   m_Name: IsInBoundsCommand
   m_EditorClassIdentifier:
-  gameBoardCoordinates: {fileID: 11400000, guid: 4b472cfdd5f0b3547ab77900b7447526, type: 2}
-  getDownwardScale: {fileID: 11400000, guid: 9486a61caea81e8458bb4373521dab46, type: 2}
+  gameBoardCoordinates: {fileID: 11400000, guid: a0036c7c0647b894fa0aa94cf4db1e4c, type: 2}
+  getDownwardScale: {fileID: 11400000, guid: 044f2bf949ab2724096c68177c96fc07, type: 2}

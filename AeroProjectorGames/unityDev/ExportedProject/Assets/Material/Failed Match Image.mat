@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Failed Match Image
-  m_Shader: {fileID: 4800000, guid: 924dd5b5a69603749841052dee9531ae, type: 3}
+  m_Shader: {fileID: 4800000, guid: 2741dc134477b8e49b51841819fa2cc6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []

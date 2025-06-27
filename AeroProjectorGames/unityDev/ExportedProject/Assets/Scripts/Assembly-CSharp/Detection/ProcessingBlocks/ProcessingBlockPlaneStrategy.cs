@@ -110,36 +110,32 @@ namespace Detection.ProcessingBlocks
 			{
 				if (frame.IsComposite)
 				{
-					using (FrameSet frameSet = FrameSet.FromFrame(frame))
+					using FrameSet frameSet = FrameSet.FromFrame(frame);
+					using DepthFrame frame2 = frameSet.DepthFrame;
+					vectorHandler.RaiseFrameReceived(frame2);
+					Vector3Int[] item = getDistanceVectors.Execute(frame2);
+					_frameSample.Enqueue(item);
+					Vector3Int vectorOfInterest = GetVectorOfInterest();
+					if (vectorOfInterest == Vector3Int.zero)
 					{
-						using (DepthFrame frame2 = frameSet.DepthFrame)
+						if (_objectDetected)
 						{
-							vectorHandler.RaiseFrameReceived(frame2);
-							Vector3Int[] item = getDistanceVectors.Execute(frame2);
-							_frameSample.Enqueue(item);
-							Vector3Int vectorOfInterest = GetVectorOfInterest();
-							if (vectorOfInterest == Vector3Int.zero)
-							{
-								if (_objectDetected)
-								{
-									_objectDetected = false;
-									ResetWalkAwayTimer();
-									vectorHandler.RaiseObjectRemoved();
-								}
-							}
-							else if (_okToThrow)
-							{
-								if (!_objectDetected)
-								{
-									_objectDetected = true;
-									vectorHandler.RaiseObjectDetected(vectorOfInterest);
-								}
-							}
-							else
-							{
-								ResetWalkAwayTimer();
-							}
+							_objectDetected = false;
+							ResetWalkAwayTimer();
+							vectorHandler.RaiseObjectRemoved();
 						}
+					}
+					else if (_okToThrow)
+					{
+						if (!_objectDetected)
+						{
+							_objectDetected = true;
+							vectorHandler.RaiseObjectDetected(vectorOfInterest);
+						}
+					}
+					else
+					{
+						ResetWalkAwayTimer();
 					}
 				}
 			}

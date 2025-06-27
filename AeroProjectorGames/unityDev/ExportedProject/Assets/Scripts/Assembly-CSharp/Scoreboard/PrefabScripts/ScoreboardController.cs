@@ -167,31 +167,20 @@ namespace Scoreboard.PrefabScripts
 
 		private GameObject GetScoreboard(ScoreboardType type)
 		{
-			switch (type)
+			return type switch
 			{
-			case ScoreboardType.BasicUnscored:
-				return basicUnscoredScoreboardFactory.GetScoreboard();
-			case ScoreboardType.Battleship:
-				return battleshipScoredScoreboardFactory.GetScoreboard(gameState.NumberOfRounds, playerState);
-			case ScoreboardType.Concentration:
-				return concentrationScoreboardFactory.GetScoreboard(playerState);
-			case ScoreboardType.CricketScored:
-				return cricketScoredScoreboardFactory.GetScoreboard(playerState);
-			case ScoreboardType.CricketUnscored:
-				return cricketUnscoredScoreboardFactory.GetScoreboard(playerState);
-			case ScoreboardType.Standard:
-				return standardScoreboardFactory.GetScoreboard(gameState.NumberOfRounds, playerState);
-			case ScoreboardType.Norse:
-				return norseScoreboardFactory.GetScoreboard();
-			case ScoreboardType.TwentyOne:
-				return twentyOneScoreboardFactory.GetScoreboard(gameState.NumberOfRounds, playerState);
-			case ScoreboardType.UnscoredTwoPlayer:
-				return unscoredTwoPlayerScoreboardFactory.GetScoreboard();
-			case ScoreboardType.WordWhack:
-				return wordWhackScoreboard.GetScoreboard();
-			default:
-				throw new ArgumentOutOfRangeException("type", type, null);
-			}
+				ScoreboardType.BasicUnscored => basicUnscoredScoreboardFactory.GetScoreboard(), 
+				ScoreboardType.Battleship => battleshipScoredScoreboardFactory.GetScoreboard(gameState.NumberOfRounds, playerState), 
+				ScoreboardType.Concentration => concentrationScoreboardFactory.GetScoreboard(playerState), 
+				ScoreboardType.CricketScored => cricketScoredScoreboardFactory.GetScoreboard(playerState), 
+				ScoreboardType.CricketUnscored => cricketUnscoredScoreboardFactory.GetScoreboard(playerState), 
+				ScoreboardType.Standard => standardScoreboardFactory.GetScoreboard(gameState.NumberOfRounds, playerState), 
+				ScoreboardType.Norse => norseScoreboardFactory.GetScoreboard(), 
+				ScoreboardType.TwentyOne => twentyOneScoreboardFactory.GetScoreboard(gameState.NumberOfRounds, playerState), 
+				ScoreboardType.UnscoredTwoPlayer => unscoredTwoPlayerScoreboardFactory.GetScoreboard(), 
+				ScoreboardType.WordWhack => wordWhackScoreboard.GetScoreboard(), 
+				_ => throw new ArgumentOutOfRangeException("type", type, null), 
+			};
 		}
 
 		private void ShowDefaultMenu()

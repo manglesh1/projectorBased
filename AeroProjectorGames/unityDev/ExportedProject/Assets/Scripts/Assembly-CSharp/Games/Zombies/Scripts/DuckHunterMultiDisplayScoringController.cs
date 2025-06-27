@@ -37,29 +37,16 @@ namespace Games.Zombies.Scripts
 
 		public GameObject AddTarget(GameObject target, int rowIndex, int colIndex)
 		{
-			GameObject[] array;
-			switch (rowIndex)
+			GameObject[] array = rowIndex switch
 			{
-			case 1:
-				array = boardLayoutRow1;
-				break;
-			case 2:
-				array = boardLayoutRow2;
-				break;
-			case 3:
-				array = boardLayoutRow3;
-				break;
-			case 4:
-				array = boardLayoutRow4;
-				break;
-			case 5:
-				array = boardLayoutRow5;
-				break;
-			default:
-				throw new InvalidOperationException($"Unexpected AddTarget value: {rowIndex}");
-			}
-			GameObject[] array2 = array;
-			GameObject gameObject = UnityEngine.Object.Instantiate(target, array2[colIndex - 1].transform);
+				1 => boardLayoutRow1, 
+				2 => boardLayoutRow2, 
+				3 => boardLayoutRow3, 
+				4 => boardLayoutRow4, 
+				5 => boardLayoutRow5, 
+				_ => throw new InvalidOperationException($"Unexpected AddTarget value: {rowIndex}"), 
+			};
+			GameObject gameObject = UnityEngine.Object.Instantiate(target, array[colIndex - 1].transform);
 			if (Screen.width / Screen.height == 0)
 			{
 				gameObject.transform.localScale = new Vector3(50f, 50f);

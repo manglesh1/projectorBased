@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Gorditas-Bold SDF Material
-  m_Shader: {fileID: 4800000, guid: 442ed71f091e1214aa7dc063e46ddd01, type: 3}
+  m_Shader: {fileID: 4800000, guid: f0ec520811799fa45ad01a5dc6121c4e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _MainTex:
-        m_Texture: {fileID: 2800000, guid: cfd30afb58b3ee94b9ae58cf1d488a26, type: 3}
+        m_Texture: {fileID: 2800000, guid: d1fb16701a30d504e95379a8bd46e3d6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _OutlineTex:

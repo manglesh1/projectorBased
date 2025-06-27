@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 720d566ae0e8d82e5d9ba6d9d6c8e4ae, type: 3}
   m_Name: TimerState
   m_EditorClassIdentifier:
-  timerEvents: {fileID: 11400000, guid: 29c53167a124fa44f8ecacd39cb3d78b, type: 2}
+  timerEvents: {fileID: 11400000, guid: 4b2cc7dba5893f94982ad323cc3be341, type: 2}

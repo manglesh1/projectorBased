@@ -140,17 +140,13 @@ public class TestViewController : MonoBehaviour
 
 	private string GetStatusText(GameBoardStatusEnum status)
 	{
-		switch (status)
+		return status switch
 		{
-		case GameBoardStatusEnum.ObjectNotDetected:
-			return "Object not detected";
-		case GameBoardStatusEnum.Miss:
-			return "Miss";
-		case GameBoardStatusEnum.Hit:
-			return "Hit";
-		default:
-			return "Status unknown";
-		}
+			GameBoardStatusEnum.ObjectNotDetected => "Object not detected", 
+			GameBoardStatusEnum.Miss => "Miss", 
+			GameBoardStatusEnum.Hit => "Hit", 
+			_ => "Status unknown", 
+		};
 	}
 
 	private void ResetLabels()
